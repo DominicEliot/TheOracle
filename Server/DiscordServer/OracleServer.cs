@@ -2,23 +2,22 @@
 global using Discord;
 global using Microsoft.Extensions.DependencyInjection;
 global using Newtonsoft.Json;
-
+using System.Reflection;
 using Discord.Interactions;
+using Discord.Net.Queue;
+using Discord.Rest;
 using Discord.WebSocket;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using Serilog;
-using System.Reflection;
-using OracleCommands;
-using Server.Data;
-using Server.OracleRoller;
-using Server.DiscordServer;
-using Microsoft.EntityFrameworkCore;
 using Npgsql;
+using OracleCommands;
+using Serilog;
+using Server.Data;
+using Server.DiscordServer;
+using Server.OracleRoller;
 using TheOracle2;
-using Microsoft.Extensions.Caching.Memory;
-using Discord.Net.Queue;
-using System.Net.Http.Headers;
 
 class OracleServer
 {
@@ -81,7 +80,7 @@ class OracleServer
             default:
                 break;
         }
-        
+
         switch (msg.Severity)
         {
             case LogSeverity.Critical:
@@ -131,11 +130,11 @@ class OracleServer
                     .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning)
                     .CreateLogger();
 
-
         return new ServiceCollection()
             .AddSingleton<IConfiguration>(config)
-            .AddSingleton(new DiscordSocketClient(clientConfig))
+            .AddSingleton<DiscordSocketClient>()
             .AddSingleton(interactionServiceConfig)
+            .AddSingleton<IRestClientProvider>(sp => sp.GetRequiredService<DiscordSocketClient>())
             .AddSingleton<InteractionService>()
             .AddSingleton<CommandHandler>()
             .AddSingleton<Random>()
@@ -170,7 +169,6 @@ class OracleServer
             File.WriteAllText("token.json", json);
         }
 
-        return token ?? String.Empty;
+        return token ?? string.Empty;
     }
-
 }
