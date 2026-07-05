@@ -31,6 +31,7 @@ public class JsonAssetRepository : IAssetRepository
             _Assets = new List<AssetRoot>();
             var files = new DirectoryInfo(Path.Combine("Data", "ironsworn")).GetFiles("*assets*.json").ToList();
             files.AddRange(new DirectoryInfo(Path.Combine("Data", "starforged")).GetFiles("*assets*.json").ToList());
+            files.AddRange(new DirectoryInfo(Path.Combine("Data", "sundered")).GetFiles("*assets*.json").ToList());
 
             foreach (var file in files)
             {

@@ -1,0 +1,2539 @@
+[
+  {
+    "Source": {
+      "Title": "Sundered Isles",
+      "Authors": [
+        "Shawn Tomkin"
+      ],
+      "Date": "2024-07-01"
+    },
+    "$id": "SunderedIsles/Assets/Companion",
+    "Name": "Companion",
+    "Display": {
+      "Title": "Companion"
+    },
+    "Assets": [
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Companion",
+        "$id": "SunderedIsles/Assets/Companion/Albatross",
+        "Name": "Albatross",
+        "Display": {
+          "Title": "Albatross",
+          "Color": "#3d8b8a"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Companion/Albatross/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 3,
+          "$id": "SunderedIsles/Assets/Companion/Albatross/Condition_Meter",
+          "Name": "Health",
+          "Max": 3
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Companion/Albatross/Abilities/1",
+            "Text": "Your albatross companion brings good luck, but its fate is tied to your own. When you are at sea, increase your momentum reset by 1. If the albatross is killed, discard this asset and suffer a permanent impact.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Albatross/Abilities/2",
+            "Text": "When the albatross flies ahead of your ship or perches on the ship’s mast as you [Finish an Expedition](datasworn:move:starforged/exploration/finish_an_expedition), its luck is on your side. You may reroll one challenge die.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Albatross/Abilities/3",
+            "Text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) at sea by asking the spirit embodied by the albatross for a favorable boon, you may roll +its health. If you do, take +1 momentum on a hit. On a strong hit with a match, also mark 1 tick on your bonds legacy track as you deepen your connection to your companion.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Companion",
+        "$id": "SunderedIsles/Assets/Companion/Chattering_Skull",
+        "Name": "Chattering Skull",
+        "Display": {
+          "Title": "Chattering Skull",
+          "Color": "#3d8b8a"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Companion/Chattering_Skull/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Companion/Chattering_Skull/Abilities/1",
+            "Text": "This animate skull does not use a health meter, but is as vulnerable to destruction or loss as any object. When you make a move in its presence, add a cursed die (ten-sided) to the roll. If that die rolls a 10, you glean insight from the skull’s incessant chatter as follows.\n\n  * If you rolled a miss, reroll all dice. If you miss again, the skull leads you astray.\n  * If you rolled a hit, take +1 momentum and add +1 on your next related move.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Chattering_Skull/Abilities/2",
+            "Text": "When you roll a match with a 10 on the cursed die, you learn a surprising or dreadful aspect of the skull’s history or nature; mark 1 box on your bonds legacy track.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Chattering_Skull/Abilities/3",
+            "Text": "Once per situation, when you make a move against a supernatural foe, obstacle, or mystery, you may use the value of the cursed die in place of your action die.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Companion",
+        "$id": "SunderedIsles/Assets/Companion/Dolphin",
+        "Name": "Dolphin",
+        "Display": {
+          "Title": "Dolphin",
+          "Color": "#3d8b8a"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Companion/Dolphin/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 4,
+          "$id": "SunderedIsles/Assets/Companion/Dolphin/Condition_Meter",
+          "Name": "Health",
+          "Max": 4
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Companion/Dolphin/Abilities/1",
+            "Text": "Your dolphin companion is a helpful but often errant friend. When you call the dolphin, roll +heart. On a hit, it appears and will remain in the area for an hour or two. You may (one time only) reroll any dice on a move to overcome an obstacle or hazard with its help. On a strong hit, also take +2 momentum. On a miss, it is away or unable to respond; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Dolphin/Abilities/2",
+            "Text": "When you make a move to detect or evade a threat while swimming in the company of the dolphin, roll +its health and take +1 momentum on a hit.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Dolphin/Abilities/3",
+            "Text": "When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) and score a miss with a match, you may envision the dolphin appearing unbidden to guide you out of trouble. If you do, reroll both challenge dice.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Companion",
+        "$id": "SunderedIsles/Assets/Companion/Dragon",
+        "Name": "Dragon",
+        "Display": {
+          "Title": "Dragon",
+          "Color": "#3d8b8a"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Companion/Dragon/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 5,
+          "$id": "SunderedIsles/Assets/Companion/Dragon/Condition_Meter",
+          "Name": "Health",
+          "Max": 5
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Companion/Dragon/Abilities/1",
+            "Text": "Your dragon companion wards off trouble. When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by letting it roam, roll +its health. You must [Sacrifice Resources](datasworn:move:starforged/suffer/sacrifice_resources) (-1) about once a day to satiate its fierce appetite; otherwise, make the [Companion Takes a Hit](datasworn:move:starforged/suffer/companion_takes_a_hit) (-2) move.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Dragon/Abilities/2",
+            "Text": "The dragon accepts you as a rider. It flies under your direction, and assails your foes using tooth, tail, claw, and fiery breath. When you make a move from the saddle to lead an expedition or leverage the dragon as a weapon, you may roll +its health. If you then roll a 1 or 2 on your action die, the dragon must bear the brunt of any cost or counterattack.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Dragon/Abilities/3",
+            "Text": "When you make the [Companion Takes a Hit](datasworn:move:starforged/suffer/companion_takes_a_hit) move, take +1 momentum on a strong hit.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Companion",
+        "$id": "SunderedIsles/Assets/Companion/Jungle_Cat",
+        "Name": "Jungle Cat",
+        "Display": {
+          "Title": "Jungle Cat",
+          "Color": "#3d8b8a"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Companion/Jungle_Cat/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 4,
+          "$id": "SunderedIsles/Assets/Companion/Jungle_Cat/Condition_Meter",
+          "Name": "Health",
+          "Max": 4
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Companion/Jungle_Cat/Abilities/1",
+            "Text": "Your jungle cat companion leaps into the fight at your side. When you [Strike](datasworn:move:starforged/combat/strike) aided by the cat, or if you make a move to intimidate your foes, add +1. If you [Clash](datasworn:move:starforged/combat/clash), take +1 momentum on a hit.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Jungle_Cat/Abilities/2",
+            "Text": "The jungle cat leads the way on treacherous overland journeys. When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) through wilderness, add +1. On a strong hit with a match, the cat guides you to an otherwise unseen opportunity; envision what you find and take +2 momentum.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Jungle_Cat/Abilities/3",
+            "Text": "When you [Endure Stress](datasworn:move:starforged/suffer/endure_stress) in the company of the jungle cat, or if you [Hearten](datasworn:move:starforged/recover/hearten) in their company, add +1. On a strong hit with a match, you find inspiration or solace; take +momentum equal to their health.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Companion",
+        "$id": "SunderedIsles/Assets/Companion/Monkey",
+        "Name": "Monkey",
+        "Display": {
+          "Title": "Monkey",
+          "Color": "#3d8b8a"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Companion/Monkey/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 3,
+          "$id": "SunderedIsles/Assets/Companion/Monkey/Condition_Meter",
+          "Name": "Health",
+          "Max": 3
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Companion/Monkey/Abilities/1",
+            "Text": "Your monkey companion finds its own trouble. Once per situation, when you score a miss, you may suffer the cost by envisioning the monkey causing mischief or getting into danger. If you do, roll +its health. On a strong hit, the monkey unwittingly turns the situation in your favor; take +2 momentum. On a weak hit, it provides a distraction or mild boon; take +1 momentum. On a miss, it faces its own cost or makes the situation worse.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Monkey/Abilities/2",
+            "Text": "When you make a move by sending the monkey to complete a task involving theft, infiltration, or sabotage, roll +its health. On a hit, take +1 momentum.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Monkey/Abilities/3",
+            "Text": "When you [Resupply](datasworn:move:starforged/recover/resupply) by asking the monkey to search or scavenge, add +1.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Companion",
+        "$id": "SunderedIsles/Assets/Companion/Parrot",
+        "Name": "Parrot",
+        "Display": {
+          "Title": "Parrot",
+          "Color": "#3d8b8a"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Companion/Parrot/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 2,
+          "$id": "SunderedIsles/Assets/Companion/Parrot/Condition_Meter",
+          "Name": "Health",
+          "Max": 2
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Companion/Parrot/Abilities/1",
+            "Text": "Your parrot companion offers random wisdom. When you seek inspiration, context, or direction, use your oracle dice to choose a table (1–25: [Action](datasworn:oracle_rollable:sundered_isles/core/action), 26–50: [Theme](datasworn:oracle_rollable:sundered_isles/core/theme), 51–75: [Descriptor](datasworn:oracle_rollable:sundered_isles/core/descriptor), 76–100: [Focus](datasworn:oracle_rollable:sundered_isles/core/focus)). Then, roll to learn what your parrot says. If you connect this prompt to your current situation for new insight, take +1 momentum.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Parrot/Abilities/2",
+            "Text": "Once per fight, when you score a miss, you may envision how the parrot appears on the scene to cause a timely distraction. If you do, make it a strong hit instead.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Parrot/Abilities/3",
+            "Text": "The parrot squawks a warning when danger is near. When you [Face Danger](datasworn:move:starforged/adventure/face_danger) to detect a threat, or if you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) against an ambush, add +its health.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Companion",
+        "$id": "SunderedIsles/Assets/Companion/Rat",
+        "Name": "Rat",
+        "Display": {
+          "Title": "Rat",
+          "Color": "#3d8b8a"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Companion/Rat/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 2,
+          "$id": "SunderedIsles/Assets/Companion/Rat/Condition_Meter",
+          "Name": "Health",
+          "Max": 2
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Companion/Rat/Abilities/1",
+            "Text": "Your rat companion shows the way. When you make a move to flee a danger aboard a ship or within a confined site, and let your rat take the lead, add +its health.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Rat/Abilities/2",
+            "Text": "When you make a move by setting loose the rat to cause a distraction or commotion among a crowd or in a public space, add +1 and take +1 momentum on a hit. On a strong hit with a match, it creates unexpected chaos; take +1 momentum more.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Rat/Abilities/3",
+            "Text": "You may [Explore a Waypoint](datasworn:move:starforged/exploration/explore_a_waypoint) (even if not on an expedition) by sending the rat to search a promising confined area for something of interest or value. If you do, roll +its health. On a miss, its instincts have you forewarned; you may reroll one challenge die.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Companion",
+        "$id": "SunderedIsles/Assets/Companion/Kraken",
+        "Name": "The Kraken",
+        "Display": {
+          "Title": "The Kraken",
+          "Color": "#3d8b8a"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Companion/Kraken/Abilities/1",
+            "Text": "When you summon the Kraken, fill one segment of a four-segment clock. The Kraken will heed a single command to destroy or overcome any foe or obstacle. If you are in a fight, [Take Decisive Action](datasworn:move:starforged/combat/take_decisive_action) with an automatic strong hit. When the clock is filled, [Ask the Oracle](datasworn:move.oracle_rollable:starforged/fate/ask_the_oracle.fifty_fifty) (using the yes/no table) if the Kraken turns against you, making it 50/50. On a yes, discard this asset; the Kraken is now an epic foe. On a no, clear one segment of the clock.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Kraken/Abilities/2",
+            "Text": "When you make a move using a threat to call the Kraken as leverage, add +2.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Companion/Kraken/Abilities/3",
+            "Text": "One time only, when you [Fulfill Your Vow](datasworn:move:starforged/quest/fulfill_your_vow) (formidable or greater) in service to the Kraken and score a hit, choose one: clear all clock segments, or discard this asset and mark three boxes on your bonds legacy track.",
+            "Enabled": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Source": {
+      "Title": "Sundered Isles",
+      "Authors": [
+        "Shawn Tomkin"
+      ],
+      "Date": "2024-07-01"
+    },
+    "$id": "SunderedIsles/Assets/Deed",
+    "Name": "Deed",
+    "Display": {
+      "Title": "Deed"
+    },
+    "Assets": [
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Deed",
+        "$id": "SunderedIsles/Assets/Deed/Cohort",
+        "Name": "Cohort",
+        "Display": {
+          "Title": "Cohort",
+          "Color": "#40834f"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Deed/Cohort/Abilities/1",
+            "Text": "You gain a specialist. The specialist is part of your crew, but is tracked as a connection and provides benefits to you and your allies per their role. When you [Withstand Damage](datasworn:move:starforged/suffer/withstand_damage) and score a miss, or if you [Pay the Price](datasworn:move:starforged/fate/pay_the_price), you may suffer the cost by noting the specialist as out of action. An out of action specialist provides no benefit. To restore a specialist to duty, resolve the situation as appropriate to the nature of the injury, trauma, or dispute.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Deed/Cohort/Abilities/2",
+            "Text": "Gain additional specialists by spending 1 experience to add a connection to your crew as a specialist. Specialist bonuses may not be stacked for a single action.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Deed/Cohort/Abilities/3",
+            "Text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by gathering your specialists to strategize or problem-solve, you may reroll one die for each participating specialist.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Deed",
+        "$id": "SunderedIsles/Assets/Deed/Damned",
+        "Name": "Damned",
+        "Display": {
+          "Title": "Damned",
+          "Color": "#40834f"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Deed/Damned/Abilities/1",
+            "Text": "You are cursed and remade by your encounter with death or desolation. Discard two or more assets connected to your former nature, and take up to three assets to represent your damned existence. Give the new assets a special mark. When you [Advance](datasworn:move:starforged/legacy/advance) and upgrade a damned asset, spend 1 experience (instead of 2).",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Deed/Damned/Abilities/2",
+            "Text": "Choose a community where you are accepted despite (or because of) your cursed nature. When you [Sojourn](datasworn:move:starforged/recover/sojourn) there, reroll any dice.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Deed/Damned/Abilities/3",
+            "Text": "When your curse is broken through the fulfillment of a vow or other event, activate this ability at no cost. Discard this asset and any of your damned assets, exchanging them one-for-one for new assets with an equal number of marked abilities. You may then improve one of your stats by +1.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Deed",
+        "$id": "SunderedIsles/Assets/Deed/Fleet_Commander",
+        "Name": "Fleet Commander",
+        "Display": {
+          "Title": "Fleet Commander",
+          "Color": "#40834f"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 0,
+          "$id": "SunderedIsles/Assets/Deed/Fleet_Commander/Condition_Meter",
+          "Name": "Power",
+          "Max": 4
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Deed/Fleet_Commander/Abilities/1",
+            "Text": "Your fleet has a starting and max power of 4. When you make a move as a fleetwide action to get in position, avoid a hazard, or fight, roll +power. If your fleet bears the cost of a move, suffer -1 power. At 0 power, mark the fleet as wrecked. To refit the fleet, [Sojourn](datasworn:move:starforged/recover/sojourn) and forgo an automatic strong hit on a recover move to take +2 power; if the fleet is wrecked, first spend 2 experience to clear that status.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Deed/Fleet_Commander/Abilities/2",
+            "Text": "Take +2 power and set your max power to 5.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Deed/Fleet_Commander/Abilities/3",
+            "Text": "When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition), you may reroll your action die if its value is less than your fleet’s power.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Deed",
+        "$id": "SunderedIsles/Assets/Deed/Old_Salt",
+        "Name": "Old Salt",
+        "Display": {
+          "Title": "Old Salt",
+          "Color": "#40834f"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Deed/Old_Salt/Abilities/1",
+            "Text": "You are accustomed to a life at sea. When you set sail after a landlocked layover, take +2 momentum or +2 spirit, or +1 of each. When you make landfall, [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-1).",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Deed/Old_Salt/Abilities/2",
+            "Text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) to plot a course through careful study of currents and weather, or if you [Face Danger](datasworn:move:starforged/adventure/face_danger) aboard ship to overcome or avoid an environmental hazard such as a storm or rogue wave, add +1 and take +1 momentum on a hit.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Deed/Old_Salt/Abilities/3",
+            "Text": "When you make a move to hunt, oppose, study, pacify, or gain the favor of a sea creature, add +1. On a strong hit with a match, envision the surprising insight or affinity you gain; mark 1 tick on your discoveries or bonds legacy track.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Deed",
+        "$id": "SunderedIsles/Assets/Deed/Undead",
+        "Name": "Undead",
+        "Display": {
+          "Title": "Undead",
+          "Color": "#40834f"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Deed/Undead/Abilities/1",
+            "Text": "This is not your end. Envision your undead form and nature. This asset counts as a permanent impact, but you are now resistant to mortal harm. When you [Endure Harm](datasworn:move:starforged/suffer/endure_harm), you may first [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-1, -2, or -3) to offset an equal amount of harm. If potential harm remains, and you choose to resist the harm, roll +spirit.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Deed/Undead/Abilities/2",
+            "Text": "When you make a move using your undead aspect to intimidate, scare, or confound, reroll any dice; on a hit, take +2 momentum.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Deed/Undead/Abilities/3",
+            "Text": "You may move at will between the mortal world and the realm of the dead, can take others with you, and may navigate those paths to bypass or hasten a mortal journey. When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) within the realms of the dead, roll +spirit. On a strong hit, mark progress.",
+            "Enabled": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Source": {
+      "Title": "Sundered Isles",
+      "Authors": [
+        "Shawn Tomkin"
+      ],
+      "Date": "2024-07-01"
+    },
+    "$id": "SunderedIsles/Assets/Module",
+    "Name": "Module",
+    "Display": {
+      "Title": "Module"
+    },
+    "Assets": [
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Armored_Prow",
+        "Name": "Armored Prow",
+        "Display": {
+          "Title": "Armored Prow",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 4,
+          "$id": "SunderedIsles/Assets/Module/Armored_Prow/Condition_Meter",
+          "Name": "Hull",
+          "Max": 4
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Armored_Prow/Abilities/1",
+            "Text": "When you [Face Danger](datasworn:move:starforged/adventure/face_danger) or [React Under Fire](datasworn:move:starforged/combat/react_under_fire) by sailing through an obstacle or barrier, add +1. If you [Withstand Damage](datasworn:move:starforged/suffer/withstand_damage) as an outcome of this action, also add +1.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Armored_Prow/Abilities/2",
+            "Text": "When you [Strike](datasworn:move:starforged/combat/strike) by ramming your foe, choose the force of the hit: 1, 2, or 3. Then, add +that amount. On a strong hit, mark progress. On a weak hit or miss, in addition to the outcome of the move, [Withstand Damage](datasworn:move:starforged/suffer/withstand_damage) and suffer damage equal to the force of the hit.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Armored_Prow/Abilities/3",
+            "Text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) or [Gain Ground](datasworn:move:starforged/combat/gain_ground) by bringing your ship to ramming speed and sailing headlong toward a threat, roll +integrity or +heart, whichever is higher. On a strong hit, take +1 momentum.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Chase_Guns",
+        "Name": "Chase Guns",
+        "Display": {
+          "Title": "Chase Guns",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Chase_Guns/Abilities/1",
+            "Text": "Your vessel is fitted fore and aft with powerful cannons. When you [Strike](datasworn:move:starforged/combat/strike) at a pursuing or fleeing target, take +1 momentum on a strong hit.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Chase_Guns/Abilities/2",
+            "Text": "Once per fight, when you [Gain Ground](datasworn:move:starforged/combat/gain_ground) by firing your chase guns to find the range of your target, add +1. On a strong hit, add +1 if you immediately [Strike](datasworn:move:starforged/combat/strike), and continue to add +1 on each subsequent [Strike](datasworn:move:starforged/combat/strike) as long as you remain in control. If you score a strong hit with a match when using this ability, you damage a vital component; mark progress.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Chase_Guns/Abilities/3",
+            "Text": "When you [Face Defeat](datasworn:move:starforged/combat/face_defeat) in a fight and set a new objective to escape, you may (one time only) immediately [Clash](datasworn:move:starforged/combat/clash) by firing your chase guns as you maneuver away from your foe; if you do, reroll any dice. On a strong hit, take +2 momentum.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Gilded_Adornments",
+        "Name": "Gilded Adornments",
+        "Display": {
+          "Title": "Gilded Adornments",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Gilded_Adornments/Abilities/1",
+            "Text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by making a showy display of your ship, you may roll +integrity. If you do, take +1 momentum on a hit.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Gilded_Adornments/Abilities/2",
+            "Text": "When you host a formal ceremony or reception aboard your ship, roll +heart or +integrity, whichever is higher. On a strong hit, the event goes as planned; you and any allies in attendance mark 2 ticks on your bonds legacy track. On a weak hit, as above, but you must first deal with an unfortunate conflict or interruption. On a miss, the event flops or is dramatically cut short; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Gilded_Adornments/Abilities/3",
+            "Text": "When you [Withstand Damage](datasworn:move:starforged/suffer/withstand_damage) and the ship’s finery bears the cost, you may mark this module as broken and ignore the damage. When you [Repair](datasworn:move:starforged/recover/repair) and fix this asset, take +2 momentum.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Harpoon_Cannon",
+        "Name": "Harpoon Cannon",
+        "Display": {
+          "Title": "Harpoon Cannon",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Harpoon_Cannon/Abilities/1",
+            "Text": "You may [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) or [Gain Ground](datasworn:move:starforged/combat/gain_ground) by firing your harpoon cannon at a large foe or threat. On a hit, the target is grappled. For the duration of the situation, if you make a move to maneuver against, attack, or board a grappled target, add +1. If you roll a 1 on your action die while taking action against a grappled target, the line is cut, broken, or works against you; [Pay the Price](datasworn:move:starforged/fate/pay_the_price), and you no longer gain the bonus against that target.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Harpoon_Cannon/Abilities/2",
+            "Text": "As above, and if you fire the cannon in close quarters, add +2. If at a distance, take +1 momentum on a hit.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Harpoon_Cannon/Abilities/3",
+            "Text": "When you [Gain Ground](datasworn:move:starforged/combat/gain_ground) by maneuvering against a harpooned target to entangle or hinder, take +1 momentum on a strong hit and envision the ensuing chaos.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Improved_Armory",
+        "Name": "Improved Armory",
+        "Display": {
+          "Title": "Improved Armory",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Armory/Abilities/1",
+            "Text": "When you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) by rallying your crew to repel boarders or board an enemy ship, you may roll +supply; if you do, take +1 momentum on a hit. On a strong hit with a match, you are poised to overwhelm your foes; take +1 momentum more. In addition, any allies joining the effort may take the outcome and benefits of your move without rolling to [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray).",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Armory/Abilities/2",
+            "Text": "When you [Resupply](datasworn:move:starforged/recover/resupply) by scavenging weapons or ammo from your foes after a fight, add +1.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Armory/Abilities/3",
+            "Text": "When you are out of options and set the fuse to self-destruct your command vehicle, activate this ability at no cost. If you do, envision how the sacrifice allows you to escape or overcome your foes amid the chaos. Then, mark 1 box on your quests legacy track and [Overcome Destruction](datasworn:move:starforged/threshold/overcome_destruction).",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Improved_Galley",
+        "Name": "Improved Galley",
+        "Display": {
+          "Title": "Improved Galley",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Galley/Abilities/1",
+            "Text": "You make the most of your provisions on a journey. When you [Set a Course](datasworn:move:starforged/exploration/set_a_course), you may reroll one challenge die.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Galley/Abilities/2",
+            "Text": "When you draw on your provisions to indulge yourself and others onboard, roll +supply and [Sacrifice Resources](datasworn:move:starforged/suffer/sacrifice_resources) (-2). On a strong hit, you and your allies each choose two. On a weak hit, you each choose one. On a miss, the event is ruined by a crisis, complication, or dispute.\n\n  * Bolster your ties: Mark 2 ticks on your bonds legacy track.\n  * Build resolve: Take +2 momentum.\n  * Take comfort: [Hearten](datasworn:move:starforged/recover/hearten) with an automatic strong hit.\n  * Gain strength: Take +2 health.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Galley/Abilities/3",
+            "Text": "When you [Sojourn](datasworn:move:starforged/recover/sojourn) and score a strong hit, take +1 supply as the galley is restocked.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Improved_Gunnery",
+        "Name": "Improved Gunnery",
+        "Display": {
+          "Title": "Improved Gunnery",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Gunnery/Abilities/1",
+            "Text": "Your gundecks house an intimidating array of heavy cannons. When you [Compel](datasworn:move:starforged/adventure/compel) or [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) by opening your gunports to send a promise of violence, add +1 and take +1 momentum on a hit. On a strong hit with a match, take another +1 momentum.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Gunnery/Abilities/2",
+            "Text": "Your well-drilled crew brings your cannons to bear with deadly efficiency. When you [Strike](datasworn:move:starforged/combat/strike), choose one.\n\n  * Coordinated fire: Add +1 and take +1 momentum on a hit.\n  * Unleash hell: Mark progress on a hit, but [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-1) or [Sacrifice Resources](datasworn:move:starforged/suffer/sacrifice_resources) (-1).",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Gunnery/Abilities/3",
+            "Text": "Once per fight, when you [Clash](datasworn:move:starforged/combat/clash) by committing to an all-or-nothing exchange of fire, add +1, count a weak hit as a strong hit, and mark progress on a hit. On a miss, you must suffer a dire outcome.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Improved_Hold",
+        "Name": "Improved Hold",
+        "Display": {
+          "Title": "Improved Hold",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Hold/Abilities/1",
+            "Text": "When you [Resupply](datasworn:move:starforged/recover/resupply) to gain gear or provisions for your ship’s hold, you and your allies take +1 momentum for each +2 supply gained through this action.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Hold/Abilities/2",
+            "Text": "Your ship’s hold is stocked with reserves. When you [Sacrifice Resources](datasworn:move:starforged/suffer/sacrifice_resources) and your hold supply is reduced to 0, first roll +integrity instead of marking unprepared. On a strong hit, take +1 supply. On a weak hit or miss, mark unprepared.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Hold/Abilities/3",
+            "Text": "Your hold is fitted with secret compartments. When the ship undergoes an inspection or search, [Ask the Oracle](datasworn:move:starforged/fate/ask_the_oracle) if the compartments stay hidden, setting the odds as [likely](datasworn:move.oracle_rollable:starforged/fate/ask_the_oracle.likely). If the answer is no, the searchers are suspicious, but you may [Face Danger](datasworn:move:starforged/adventure/face_danger) to distract or direct their attention elsewhere; if you do, reroll any dice.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Improved_Lookout",
+        "Name": "Improved Lookout",
+        "Display": {
+          "Title": "Improved Lookout",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Lookout/Abilities/1",
+            "Text": "While the lookout post is crewed, you are forewarned. When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) (+wits) to carefully navigate a perilous course, or if you [Face Danger](datasworn:move:starforged/adventure/face_danger) to spot a hidden or distant threat, you may reroll one challenge die.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Lookout/Abilities/2",
+            "Text": "Once per situation, when you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by studying a notable sighting or location from a distance, add +1 and take +1 momentum on a hit. On a strong hit with a match, envision an aspect of the situation or a vulnerability of your foe you can use to your advantage; take another +1 momentum.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Lookout/Abilities/3",
+            "Text": "When you come upon a rare and awe-inspiring sight, and use the lookout post for a better vantage point, choose one.\n\n  * Gain insight: take +1 momentum\n  * Gain inspiration: take +1 spirit",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Improved_Sick_Bay",
+        "Name": "Improved Sick Bay",
+        "Display": {
+          "Title": "Improved Sick Bay",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Sick_Bay/Abilities/1",
+            "Text": "When the wounded or stricken receive aid following a shipwide crisis, roll +supply. On a hit, the aid is effective; choose two on a strong hit, and one on a weak hit. On a miss, you must count the cost; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).\n\n  * Build loyalty: Mark 1 tick on your bonds legacy track.\n  * Rally: You and your allies take +1 health or +2 momentum.\n  * Get to work: Take +1 integrity.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Sick_Bay/Abilities/2",
+            "Text": "When you [Heal](datasworn:move:starforged/recover/heal), make the cost of a weak hit -1 instead of -2.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Improved_Sick_Bay/Abilities/3",
+            "Text": "When you or an ally mark the permanently harmed impact, you have a chance to make things right. If you [Heal](datasworn:move:starforged/recover/heal) and score a strong hit, clear the impact (in addition to the other benefits of the move). Then, envision the scar that remains.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Ironclad_Hull",
+        "Name": "Ironclad Hull",
+        "Display": {
+          "Title": "Ironclad Hull",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 0,
+          "$id": "SunderedIsles/Assets/Module/Ironclad_Hull/Condition_Meter",
+          "Name": "Hull",
+          "Max": 4
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Ironclad_Hull/Abilities/1",
+            "Text": "Your ship has 4 hull. When you [Withstand Damage](datasworn:move:starforged/suffer/withstand_damage), you may ignore damage up to the value of your hull. If you do, suffer -1 hull. At 0 hull, mark this module as broken. Spend 3 repair points as you [Repair](datasworn:move:starforged/recover/repair) to fix a broken ironclad hull, and 1 point to take +1 hull.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Ironclad_Hull/Abilities/2",
+            "Text": "When you [Face Danger](datasworn:move:starforged/adventure/face_danger) or [React Under Fire](datasworn:move:starforged/combat/react_under_fire) by letting your ironclad hull take the hit, roll +hull and take +1 momentum on a strong hit. On a strong hit with a match, you are impervious; take another +2 momentum.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Ironclad_Hull/Abilities/3",
+            "Text": "When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) across an area of rough seas or dangerous shallows, you may rely on your ironclad hull. If you do, roll +hull. You may reroll your action die if its value is less than your hull.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Lucky_Figurehead",
+        "Name": "Lucky Figurehead",
+        "Display": {
+          "Title": "Lucky Figurehead",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Module/Lucky_Figurehead/Inputs/Linked_Stat",
+            "Name": "Linked stat",
+            "Adjustable": false
+          },
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Module/Lucky_Figurehead/Inputs/Form",
+            "Name": "Form",
+            "Adjustable": false
+          }
+        ],
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Lucky_Figurehead/Abilities/1",
+            "Text": "Choose one of your stats to represent the figurehead’s theme. When you depart a port or anchorage, you may roll +linked stat. You cannot burn momentum on this roll. On a strong hit, the figurehead’s luck offers a boon; you and your allies take +2 momentum and +1 spirit. On a weak hit, you and your allies take +1 momentum. On a miss, the luck is foul; you and your allies [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-1), and the figurehead offers no benefits until you next check its luck.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Lucky_Figurehead/Abilities/2",
+            "Text": "When you make a move +linked stat while aboard ship, and score a miss with a match, you may reroll both challenge dice.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Lucky_Figurehead/Abilities/3",
+            "Text": "When you must [Withstand Damage](datasworn:move:starforged/suffer/withstand_damage), you may (before or after rolling) mark this module as broken, and ignore all damage.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Map_Room",
+        "Name": "Map Room",
+        "Display": {
+          "Title": "Map Room",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Map_Room/Abilities/1",
+            "Text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) or [Gather Information](datasworn:move:starforged/adventure/gather_information) by studying or preparing your maps before setting off on an expedition, reroll any dice. On a hit, you may also reroll any dice for the first leg of the journey as you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition).",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Map_Room/Abilities/2",
+            "Text": "When you assemble others in the map room to formulate a plan or speculate on a mysterious aspect of the world, you and any participating allies take +1 momentum.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Map_Room/Abilities/3",
+            "Text": "When you [Hearten](datasworn:move:starforged/recover/hearten) by working on or studying your maps in isolation, roll +wits instead of +heart. On a hit, take +1 spirit or +1 momentum. On a match, you uncover a previously unnoticed aspect of the world or make a dreadful realization; envision what you find, and mark 2 ticks on your discoveries legacy track.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Rigged_for_Speed",
+        "Name": "Rigged For Speed",
+        "Display": {
+          "Title": "Rigged For Speed",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Rigged_for_Speed/Abilities/1",
+            "Text": "Your ship’s shallow draft, quality sails, and well-drilled crew make it fast and maneuverable. When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) (+edge) and score a strong hit, take +1 momentum; on a strong hit with a 6 on your action die take +2 momentum instead of +1.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Rigged_for_Speed/Abilities/2",
+            "Text": "When you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray), choose one (before rolling).\n\n  * Battle sails: Add +1 and take +1 momentum on a strong hit.\n  * Full sails: Take +2 momentum on a hit.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Rigged_for_Speed/Abilities/3",
+            "Text": "When you make a move to close the distance, escape a threat, or maneuver for advantage, you may push the crew and your ship to their limit. If you do (decide after rolling), reroll any dice and count a weak hit as a strong hit. Then, [Withstand Damage](datasworn:move:starforged/suffer/withstand_damage) (-2).",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Submersible_Mode",
+        "Name": "Submersible Mode",
+        "Display": {
+          "Title": "Submersible Mode",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Submersible_Mode/Abilities/1",
+            "Text": "Your ship can cruise unseen below the surface. When you make a move against a foe or threat to avoid detection, add +1. If you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) by ambushing an unaware foe, add +1 and mark progress on a strong hit.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Submersible_Mode/Abilities/2",
+            "Text": "When you travel submerged as you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) (+shadow), you may reroll your action die. On a strong hit with a match, envision a remarkable underwater feature. If you then [Explore a Waypoint](datasworn:move:starforged/exploration/explore_a_waypoint), reroll any dice.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Submersible_Mode/Abilities/3",
+            "Text": "When you are poised to [Strike](datasworn:move:starforged/combat/strike) at a foe while submerged, you may roll +shadow. If you do, choose one (before rolling).\n\n  * [Strike](datasworn:move:starforged/combat/strike) true: Reroll any dice.\n  * [Strike](datasworn:move:starforged/combat/strike) hard: Mark progress on a hit.\n\nOn a strong hit with a match, you also remain undetected; take +2 momentum and add +1 on your next [Strike](datasworn:move:starforged/combat/strike).",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Module",
+        "$id": "SunderedIsles/Assets/Module/Trophy_Vault",
+        "Name": "Trophy Vault",
+        "Display": {
+          "Title": "Trophy Vault",
+          "Color": "#7f5a90"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Module/Trophy_Vault/Abilities/1",
+            "Text": "When you defeat a notable foe, envision the trophy you take. Then, add it to a list of trophies on display in your ship’s vault. When you make a move to overcome an obstacle or hazard aboard ship, you may use the imbued power of a trophy to reroll any dice. If you do, mark that trophy’s power as spent.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Trophy_Vault/Abilities/2",
+            "Text": "As above, and if you use a trophy to reroll all dice and score a strong hit with a match, the legacy of that object favors you; mark 2 ticks on your bonds legacy track, and do not mark the trophy as spent. If you instead score a miss with a match, envision the cursed legacy that now haunts you.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Module/Trophy_Vault/Abilities/3",
+            "Text": "When you give a tour of the vault and make a move in that space to impress or intimidate, add +2 and take +1 momentum on a hit.",
+            "Enabled": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Source": {
+      "Title": "Sundered Isles",
+      "Authors": [
+        "Shawn Tomkin"
+      ],
+      "Date": "2024-07-01"
+    },
+    "$id": "SunderedIsles/Assets/Path",
+    "Name": "Path",
+    "Display": {
+      "Title": "Path"
+    },
+    "Assets": [
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Cannoneer",
+        "Name": "Cannoneer",
+        "Display": {
+          "Title": "Cannoneer",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Cannoneer/Abilities/1",
+            "Text": "When you [Strike](datasworn:move:starforged/combat/strike) using a vehicle’s weapons, and hold your fire for maximum effect, decide the amount of momentum you risk (1, 2, or 3) and add +that amount. On a strong hit, mark progress. On a weak hit or miss, [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) equal to 1 + the amount risked (in addition to any other cost).",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Cannoneer/Abilities/2",
+            "Text": "When you make a move by firing or directing the fire of a vehicle’s weapons, and burn momentum to improve your result, roll your action die. On a 5 or 6, do not reset momentum. Otherwise, take +1 momentum after you reset.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Cannoneer/Abilities/3",
+            "Text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) or [Gain Ground](datasworn:move:starforged/combat/gain_ground) by preparing or loading special ammunition for a vehicle’s weapons, roll +supply. On a hit, take +1 momentum. Then, when you first make a move to fire this ammunition, reroll any dice.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Construct",
+        "Name": "Construct",
+        "Display": {
+          "Title": "Construct",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Construct/Abilities/1",
+            "Text": "You are a machine, and do not eat, drink, or breathe. You [Endure Harm](datasworn:move:starforged/suffer/endure_harm) as normal, but restore health only when you [Repair](datasworn:move:sundered_isles/recover/repair) (spend 1 repair point to take +1 health, and 2 points to clear the wounded impact).",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Construct/Abilities/2",
+            "Text": "When you make a move to build, repair, or study another mechanical device, or question or convince a mechanical being, you may roll +spirit. On a match, you gain understanding or affinity; mark 1 tick on your bonds legacy track.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Construct/Abilities/3",
+            "Text": "Gain one path asset (not [Augmented](datasworn:asset:starforged/path/augmented)) at no extra cost to represent a mechanical fitting or modification. Spend 1 experience to upgrade this asset, or 1 experience to swap for another path asset with an equal number of upgrades. You may suffer the cost of a move by marking the installed asset as broken, and spend 2 repair points to restore its function.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Crew_Commander",
+        "Name": "Crew Commander",
+        "Display": {
+          "Title": "Crew Commander",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 2,
+          "$id": "SunderedIsles/Assets/Path/Crew_Commander/Condition_Meter",
+          "Name": "Command",
+          "Max": 4
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Crew_Commander/Abilities/1",
+            "Text": "You have 2 command; your max is 4. When you or an ally make a move leading or aided by the crew, you may (after rolling) suffer -1 command to improve a miss to a weak hit, or a weak hit to a strong hit. When you [Pay the Price](datasworn:move:starforged/fate/pay_the_price), you may suffer the cost as -1 command. While at 0 command, this asset counts as an impact. To bolster your crew, provide a notable reward or respite, and roll +heart. On a strong hit, take +4 command. On a weak hit, take +2. On a miss, take +2 but envision a threat to your crew or leadership.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Crew_Commander/Abilities/2",
+            "Text": "Take +2 command; your max is now 6.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Crew_Commander/Abilities/3",
+            "Text": "When your command is 0 and the situation desperate, you may [Compel](datasworn:move:starforged/adventure/compel) your crew to action; if you do, take +2 command on a hit.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Cutthroat",
+        "Name": "Cutthroat",
+        "Display": {
+          "Title": "Cutthroat",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Cutthroat/Abilities/1",
+            "Text": "When you [Strike](datasworn:move:starforged/combat/strike), add +1. When you make a move using a knife not as a weapon to attack or threaten, but as a tool to cut an object, gain leverage, or grab hold, add +1 and take +1 momentum on a hit.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Cutthroat/Abilities/2",
+            "Text": "Once per situation, when you make a move to ambush an unaware foe, or perform a feint or misdirection to draw someone off their guard, reroll any dice. If in a fight, mark progress on a hit. When you hold an ambushed foe at knifepoint and make a move aided by the prospect of violence, add +1.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Cutthroat/Abilities/3",
+            "Text": "When you [Take Decisive Action](datasworn:move:starforged/combat/take_decisive_action) without mercy or restraint, you may reroll one challenge die. If you do, [Endure Stress](datasworn:move:starforged/suffer/endure_stress) (-2). If you then choose to resist the stress, roll +iron instead of +spirit or +heart.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Duelist",
+        "Name": "Duelist",
+        "Display": {
+          "Title": "Duelist",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Duelist/Abilities/1",
+            "Text": "When you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) or [Battle](datasworn:move:starforged/combat/battle) against a single worthy foe, reroll any challenge dice. If you set a new objective in a fight by challenging a worthy foe, take +2 momentum.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Duelist/Abilities/2",
+            "Text": "When you [Gain Ground](datasworn:move:starforged/combat/gain_ground) in personal combat using superficial attacks to probe your opponent’s defenses, or by drawing them off guard with verbal repartee, take +1 momentum on a hit. On a strong hit, also add +1 if you immediately [Strike](datasworn:move:starforged/combat/strike).",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Duelist/Abilities/3",
+            "Text": "When you roll a miss with a match in a situation where your reputation is known, you may suffer the cost by envisioning a notable rival who challenges you to a duel. If you defeat them, mark 2 ticks on your quests legacy track. If you decline, mark 1 tick on your bonds legacy track but envision the fallout of this refusal.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Harpooner",
+        "Name": "Harpooner",
+        "Display": {
+          "Title": "Harpooner",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Harpooner/Abilities/1",
+            "Text": "When you make a move to throw or stab your harpoon at a large target, add +1 and take +1 momentum on a hit. When you make a move to attack person-sized foes, the harpoon is a powerful but ungainly weapon; add +2, but suffer -1 momentum on a weak hit or miss (in addition to any other cost).",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Harpooner/Abilities/2",
+            "Text": "When you [Strike](datasworn:move:starforged/combat/strike) a large foe in close quarters, you may drive your harpoon home. If you do, mark progress on a hit. If the fight continues, and you choose to pull the harpoon free, you must [Gain Ground](datasworn:move:starforged/combat/gain_ground) (+iron), score a hit, and forgo one of the choices awarded by that move.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Harpooner/Abilities/3",
+            "Text": "When you [Resupply](datasworn:move:starforged/recover/resupply) by hunting large game, add +1 and take +1 supply on a hit. On a miss with a match, there’s always a bigger fish; you draw the attention of a notable threat.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Jinx",
+        "Name": "Jinx",
+        "Display": {
+          "Title": "Jinx",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Jinx/Abilities/1",
+            "Text": "You are cursed by ill luck, but persisting offers its own rewards. If you score a miss with a match, this asset counts as an impact for you and your allies. You may undo this only by scoring a strong hit with a match; if you do, you and your allies each clear the impact and mark 1 tick on your bonds legacy track.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Jinx/Abilities/2",
+            "Text": "When you score a weak hit on a progress move, you may test your luck by reducing the progress score by 1 and rerolling all dice.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Jinx/Abilities/3",
+            "Text": "When you roll matched 1’s on your challenge dice while suffering from this asset’s impact, you may activate this ability at no cost. If you do, you are favored by fortune; you and your allies clear the impact and mark 1 box on your bonds legacy track. Then, discard this asset and increase your momentum reset and max momentum (if less than 10) by 1.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Musician",
+        "Name": "Musician",
+        "Display": {
+          "Title": "Musician",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Musician/Abilities/1",
+            "Text": "When you [Hearten](datasworn:move:starforged/recover/hearten), [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage), or [Gain Ground](datasworn:move:starforged/combat/gain_ground) by encouraging yourself or others with a musical performance, add +1. On a strong hit with a match, also mark 1 tick on your bonds legacy track.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Musician/Abilities/2",
+            "Text": "When you score a hit as you [Sojourn](datasworn:move:starforged/recover/sojourn) during your first visit to a community, and [Hearten](datasworn:move:starforged/recover/hearten) by honoring them with a song, you may take an extra recovery move.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Musician/Abilities/3",
+            "Text": "When you suffer or encounter a tragic loss and perform a song to memorialize the dead, roll +heart. On a strong hit, take both. On a weak hit, choose one. On a miss, the performance leaves you or others troubled; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).\n\n  * Honor the lost: mark 2 ticks on your bonds legacy track.\n  * Offer comfort or inspiration: you and your allies take +2 spirit or +2 momentum.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Musketeer",
+        "Name": "Musketeer",
+        "Display": {
+          "Title": "Musketeer",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Musketeer/Abilities/1",
+            "Text": "When you make a move to shoot at a specific target from a distance, but score a miss, you set your sights on your quarry. The next time you make a move to shoot at the same target, add +2.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Musketeer/Abilities/2",
+            "Text": "When you [Clash](datasworn:move:starforged/combat/clash), you may attempt to turn the tide of the fight with a difficult but bold shot. If you do, roll an extra challenge die and keep the two highest. A weak hit then counts as a strong hit. On a strong hit with a match, mark progress.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Musketeer/Abilities/3",
+            "Text": "When you [Gain Ground](datasworn:move:starforged/combat/gain_ground) by charging into close quarters with a fixed bayonet, or if you [React Under Fire](datasworn:move:starforged/combat/react_under_fire) by holding foes at bay or parrying close quarter attacks with your rifle, add +1 and take +1 momentum on a hit.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Necromancer",
+        "Name": "Necromancer",
+        "Display": {
+          "Title": "Necromancer",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Necromancer/Abilities/1",
+            "Text": "While in the presence of the remains of an intelligent being, you may [Gather Information](datasworn:move:starforged/adventure/gather_information) by summoning their spirit to answer your questions. If you do, roll +heart and take +1 momentum on a hit.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Necromancer/Abilities/2",
+            "Text": "When you [Face Death](datasworn:move:starforged/threshold/face_death), or if you [Aid Your Ally](datasworn:move:starforged/adventure/aid_your_ally) by serving as their guide as they face death, mark 2 ticks on your bonds legacy track.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Necromancer/Abilities/3",
+            "Text": "You may [Face Danger](datasworn:move:starforged/adventure/face_danger) (+heart) to animate a corpse with soulless life. On a hit, it is under your control. When it aids you through force, threat, or fear as you make a move, add +2 and fill one segment of a 4-segment clock. You may also suffer the cost of a move by filling a segment. When the clock is full, the corpse crumbles to ash. You may control only a single corpse at a time.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Overlander",
+        "Name": "Overlander",
+        "Display": {
+          "Title": "Overlander",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Overlander/Abilities/1",
+            "Text": "When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) through uncharted or unfamiliar overland territory, you may reroll one challenge die.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Overlander/Abilities/2",
+            "Text": "When you find or make shelter in the wilds, roll +wits. On a strong hit, you and your allies envision how you pass the time and each take +2 spirit or +2 health, or +1 to each. In addition, any companions in your company take +1 health. On a weak hit, the comfort is fleeting; you and your allies take +1 health or +1 spirit. On a miss, you encounter hardship or a new danger; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Overlander/Abilities/3",
+            "Text": "When you [Resupply](datasworn:move:starforged/recover/resupply) by searching out a source of food, water, or other natural resources in the wilds, add +1. On a strong hit with a match, you encounter an unusual or extraordinary location; you may [Explore a Waypoint](datasworn:move:starforged/exploration/explore_a_waypoint) (even if not on an expedition) and reroll any dice.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Peddler",
+        "Name": "Peddler",
+        "Display": {
+          "Title": "Peddler",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Peddler/Abilities/1",
+            "Text": "Once per visit, when you offload valuable goods in a community, roll +wits. On a strong hit, choose two. On a weak hit, choose one. On a miss, you make a bad deal; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).\n\n  * Trade for services: Make one recovery move (not Sojourn) with an automatic strong hit\n  * Trade for clout or solidarity: Mark 1 tick on your bonds legacy track\n  * Trade for goods or coin: Mark 1 tick on your quests legacy track",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Peddler/Abilities/2",
+            "Text": "As above, and on a match, you uncover a chance to obtain a unique (if a strong hit) or problematic (if a miss) resource or item. Envision the opportunity. If you secure it, mark 2 ticks on your quests legacy track.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Peddler/Abilities/3",
+            "Text": "When you [Develop Your Relationship](datasworn:move:starforged/connection/develop_your_relationship) with a connection through a mutually beneficial trade, mark progress twice on the relationship.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Pirate_Captain",
+        "Name": "Pirate Captain",
+        "Display": {
+          "Title": "Pirate Captain",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Pirate_Captain/Abilities/1",
+            "Text": "When you seize a notable ship or treasure, roll +wits. On a strong hit, take both, or choose one twice. On a weak hit, choose one. On a miss, choose one, but this prize also brings an unexpected danger; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).\n\n  * Build your fortune: Mark 1 tick on your quests legacy track.\n  * Share the spoils: Mark 1 tick on your bonds legacy track.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Pirate_Captain/Abilities/2",
+            "Text": "When you [Set a Course](datasworn:move:starforged/exploration/set_a_course) for familiar hunting grounds or to intercept a specific target, you may reroll your action die if its value is less than your ship’s integrity. When you [Face Danger](datasworn:move:starforged/adventure/face_danger) by sailing an area in search of prey, add +1 and take +1 momentum on a hit.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Pirate_Captain/Abilities/3",
+            "Text": "You may spend 1 experience to [Sojourn](datasworn:move:starforged/recover/sojourn) with an automatic strong hit. If you do, you and your allies take one extra recovery move.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Pistoleer",
+        "Name": "Pistoleer",
+        "Display": {
+          "Title": "Pistoleer",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Pistoleer/Abilities/1",
+            "Text": "When you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) with pistols in hand, or [Battle](datasworn:move:starforged/combat/battle) by unleashing a whirlwind of gunfire, add +1. On a hit, take +2 momentum.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Pistoleer/Abilities/2",
+            "Text": "When you [Strike](datasworn:move:starforged/combat/strike) or [Clash](datasworn:move:starforged/combat/clash) with a flurry of shots, you may roll your action die up to three times (or roll three action dice at once), keeping the highest. On a strong hit, mark progress. On a weak hit or miss, after resolving the outcome of the attack, immediately [Check Your Gear](datasworn:move:starforged/adventure/check_your_gear) to see if you have more pistols and ammo at the ready. If not, this asset is unusable for the remainder of the fight.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Pistoleer/Abilities/3",
+            "Text": "When you participate in a charged or antagonistic parlay with your pistols on display, take +2 momentum at the start of the interaction.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Scattershot",
+        "Name": "Scattershot",
+        "Display": {
+          "Title": "Scattershot",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Scattershot/Abilities/1",
+            "Text": "Your scattergun is loaded with a single shot, which you may use to [Strike](datasworn:move:starforged/combat/strike) or [Clash](datasworn:move:starforged/combat/clash) against a large target, a group of massed foes, or a close quarters enemy. When you do, reroll any dice. To use the scattergun more than once in the same fight, you must first score a hit as you [Gain Ground](datasworn:move:starforged/combat/gain_ground) (+edge), forgoing one of the choices awarded by that move to instead reload and ready your next shot.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Scattershot/Abilities/2",
+            "Text": "When you make a move by firing your scattergun to damage or destroy an inanimate object, or to create a distraction, add +1 and take +1 momentum on a hit.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Scattershot/Abilities/3",
+            "Text": "When you [Take Decisive Action](datasworn:move:starforged/combat/take_decisive_action) with a devastating shot or by demanding surrender at the point of a readied scattergun, you may reroll one challenge die.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Scholar",
+        "Name": "Scholar",
+        "Display": {
+          "Title": "Scholar",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Path/Scholar/Inputs/Field_One",
+            "Name": "Field",
+            "Adjustable": false
+          },
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Path/Scholar/Inputs/Field_Two",
+            "Name": "Field",
+            "Adjustable": false
+          }
+        ],
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Scholar/Abilities/1",
+            "Text": "Choose a field of study to represent your scholarly expertise. When you [Gather Information](datasworn:move:starforged/adventure/gather_information) by conducting extended research within your field of study, or when you [Hearten](datasworn:move:starforged/recover/hearten) through the comfort of dedicated learning, add +1 and take +1 momentum on a hit. On a match, you piece together an enlightening or harrowing theory; envision the nature of this revelation and mark 1 tick on your discoveries legacy track.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Scholar/Abilities/2",
+            "Text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) or [Gain Ground](datasworn:move:starforged/combat/gain_ground) through cursory observation of a situation that falls within your field of study, or when you [Compel](datasworn:move:starforged/adventure/compel) using your expertise to speak truth or logic, add +1.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Scholar/Abilities/3",
+            "Text": "You apply yourself to another discipline. Choose a second field of study.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Shapechanger",
+        "Name": "Shapechanger",
+        "Display": {
+          "Title": "Shapechanger",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Path/Shapechanger/Inputs/Form",
+            "Name": "Form",
+            "Adjustable": false
+          },
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Path/Shapechanger/Inputs/Trigger",
+            "Name": "Trigger",
+            "Adjustable": false
+          }
+        ],
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Shapechanger/Abilities/1",
+            "Text": "You have an alternate form and a trigger that sparks the transformation. If you encounter or activate the trigger, [Face Danger](datasworn:move:starforged/adventure/face_danger) (roll +health) to hasten, endure, or resist the transformation. When you make a move in your alternate form, roll an extra action die. If the move is true to your alternate form’s nature, keep the highest as your action die value. If it is contrary, keep the lowest. To willingly return to your normal form, [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-2).",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Shapechanger/Abilities/2",
+            "Text": "As above, and when you score a hit with matching values on both action dice, your identities are in harmony; take +1 momentum.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Shapechanger/Abilities/3",
+            "Text": "Choose your normal or alternate form as your ideal self. When you change to that form, you are partially restored and may take +1 health or +1 spirit.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Shipwright",
+        "Name": "Shipwright",
+        "Display": {
+          "Title": "Shipwright",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Shipwright/Abilities/1",
+            "Text": "When you personally [Repair](datasworn:move:starforged/recover/repair) a vehicle, or direct those repairs, take 1 extra repair point or +1 momentum on a hit.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Shipwright/Abilities/2",
+            "Text": "You may [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) (+wits) by studying the construction or configuration of an enemy vessel. On a strong hit, you spot a vulnerability or a means of overcoming its advantages; envision what you learn, and take +2 momentum. Then, one time only, you or an ally may reroll any dice when using this insight to make a move.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Shipwright/Abilities/3",
+            "Text": "When you [Resupply](datasworn:move:starforged/recover/resupply) by repurposing parts or materials from a ship or wreck, reroll any challenge dice. On a strong hit with a match, you may reclaim a capability of that ship. If you do, take a free module or support vehicle asset, or gain one free upgrade to an existing module or vehicle.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Socialite",
+        "Name": "Socialite",
+        "Display": {
+          "Title": "Socialite",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Socialite/Abilities/1",
+            "Text": "When you make a move using charm, flattery, or seduction, or by navigating elite social circles, add +1.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Socialite/Abilities/2",
+            "Text": "When you first make an appearance at a social event, you may attempt a grand or memorable entrance. If you do, roll +heart. On a strong hit, mark 1 tick on your bonds legacy track and take +3 momentum. On a weak hit, take +2 momentum. On a miss, choose one and [Endure Stress](datasworn:move:starforged/suffer/endure_stress) (-2).\n\n  * You spot an unwelcome rival, authority, or former beau.\n  * You commit an embarrassing faux pas.\n  * You are upstaged by another’s entrance.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Socialite/Abilities/3",
+            "Text": "When you [Hearten](datasworn:move:starforged/recover/hearten) while attending an exclusive social event, reroll any dice. On a strong hit, you and any allies in your company take +1 momentum.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Sorcerer",
+        "Name": "Sorcerer",
+        "Display": {
+          "Title": "Sorcerer",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Sorcerer/Abilities/1",
+            "Text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) or [Gain Ground](datasworn:move:starforged/combat/gain_ground) by creating a minor mystical effect, roll +spirit. On a strong hit, take +1 momentum. On a weak hit, take the standard benefits of the move, but first [Endure Stress](datasworn:move:starforged/suffer/endure_stress) (-1). On a match, you learn something of magic’s nature through an unexpected boon or harrowing backlash; mark 1 tick on your discoveries legacy track.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Sorcerer/Abilities/2",
+            "Text": "You may purchase assets of a supernatural nature for 1 experience (instead of 3).",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Sorcerer/Abilities/3",
+            "Text": "When you [Swear an Iron Vow](datasworn:move:starforged/quest/swear_an_iron_vow) (extreme or greater) to gather the components and lore of a complex and powerful ritual, reroll any dice. When you [Reach a Milestone](datasworn:move:starforged/quest/reach_a_milestone) on this quest, take +2 momentum. When you enact the ritual to [Fulfill Your Vow](datasworn:move:starforged/quest/fulfill_your_vow), you may reroll any challenge dice to draw on unknowable powers at the risk of your soul. If you do, [Face Desolation](datasworn:move:starforged/threshold/face_desolation).",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Spy",
+        "Name": "Spy",
+        "Display": {
+          "Title": "Spy",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Spy/Abilities/1",
+            "Text": "When you infiltrate a location or event, increase your momentum reset by 1 for the duration of the mission.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Spy/Abilities/2",
+            "Text": "When you [Face Danger](datasworn:move:starforged/adventure/face_danger) or [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) to adopt a disguise or establish a false identity, add +1. On a hit, add +1 when using that identity to deceive or influence others. If you score a miss with a match when using a false identity, your deception is completely and dramatically undone.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Spy/Abilities/3",
+            "Text": "When you lie to [Make a Connection](datasworn:move:starforged/connection/make_a_connection), you may reroll one challenge die. If you [Forge a Bond](datasworn:move:starforged/connection/forge_a_bond) in a relationship built on lies, choose one.\n\n  * Maintain the deception: You may reroll one challenge die.\n  * Reveal the truth: On a strong hit, make the legacy reward one rank higher (1 extra box if already epic).",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Swashbuckler",
+        "Name": "Swashbuckler",
+        "Display": {
+          "Title": "Swashbuckler",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Swashbuckler/Abilities/1",
+            "Text": "When you make a move with outrageous style, and do not roll a 1 on your action die, you may reroll that die. If you burn momentum to improve your result on this move, roll your action die again; on a 5 or 6, do not reset momentum.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Swashbuckler/Abilities/2",
+            "Text": "When you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) in personal combat, or when an ongoing fight transitions to personal combat, you may envision up to three useful aspects of your surroundings. Take +1 momentum for each. Then, when you make a daring or unexpected move incorporating one of those aspects (once per aspect), add +1.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Swashbuckler/Abilities/3",
+            "Text": "When you [React Under Fire](datasworn:move:starforged/combat/react_under_fire) in close quarters by parrying, and score a strong hit, you counter or turn your foe’s attack against them; mark progress.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Urchin",
+        "Name": "Urchin",
+        "Display": {
+          "Title": "Urchin",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Urchin/Abilities/1",
+            "Text": "You are unnoticed and underestimated. When you make a move to sneak, hide, or pilfer, add +1 and take +1 momentum on a hit. When you make a move to defy expectations (decide before rolling), add +1 and reroll any dice, but count a weak hit as a miss.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Urchin/Abilities/2",
+            "Text": "Name a connection as your mentor. When you [Develop Your Relationship](datasworn:move:starforged/connection/develop_your_relationship) with them, take +2 momentum. When you successfully [Fulfill Your Vow](datasworn:move:starforged/quest/fulfill_your_vow) in their service or to their benefit, also mark 2 ticks on your bonds legacy track. When you [Forge a Bond](datasworn:move:starforged/connection/forge_a_bond) with them and score a hit, make the legacy reward one rank higher (1 extra box if already epic).",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Urchin/Abilities/3",
+            "Text": "When you come of age or take on a role beyond your years, gain this ability at no cost. Then, discard this asset and take two others (at no cost) to represent your new status.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Waterborn",
+        "Name": "Waterborn",
+        "Display": {
+          "Title": "Waterborn",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 5,
+          "$id": "SunderedIsles/Assets/Path/Waterborn/Condition_Meter",
+          "Name": "Air",
+          "Max": 5
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Waterborn/Abilities/1",
+            "Text": "You have an affinity for the depths. You can spend extended time underwater without need of a breath, and have 5 air. When you exert yourself to make a move underwater, you may suffer -1 air and add +1. When your air is 0, you must [Endure Harm](datasworn:move:starforged/suffer/endure_harm) (-2) before making any move involving physical action. When you return to the surface or an air-filled environment, set your air to 5.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Waterborn/Abilities/2",
+            "Text": "Once per foray into underwater environs, you may trade air for momentum, or vice-versa. Suffer -2 air and take +2 momentum, or [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-2) and take +2 air.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Waterborn/Abilities/3",
+            "Text": "When you make a move to maneuver while diving or swimming, take +1 momentum on a strong hit.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Path",
+        "$id": "SunderedIsles/Assets/Path/Windbinder",
+        "Name": "Windbinder",
+        "Display": {
+          "Title": "Windbinder",
+          "Color": "#3f7faa"
+        },
+        "Usage": {
+          "Shared": false
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Path/Windbinder/Abilities/1",
+            "Text": "When you bind the winds to your will, roll +edge. On a strong hit, the winds are fine; you and your allies take +2 momentum now, and add +1 when you make a move to navigate or maneuver. On a weak hit, the winds are fair; take +2 momentum. On a miss, the capricious winds are foul; you and your allies [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-2), and face weather-related hazards as appropriate. No matter the outcome, the winds are fair after a few hours.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Windbinder/Abilities/2",
+            "Text": "As above, and add +1 when you bind the winds.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Path/Windbinder/Abilities/3",
+            "Text": "Once per situation, you may summon a mighty cyclone. Take an automatic miss as defined above, but also wreak havoc on your foes; mark progress on a related quest, or mark progress twice on an objective in a fight.",
+            "Enabled": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Source": {
+      "Title": "Sundered Isles",
+      "Authors": [
+        "Shawn Tomkin"
+      ],
+      "Date": "2024-07-01"
+    },
+    "$id": "SunderedIsles/Assets/Command_Vehicle",
+    "Name": "Command Vehicle",
+    "Display": {
+      "Title": "Command Vehicle"
+    },
+    "Assets": [
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Command_Vehicle",
+        "$id": "SunderedIsles/Assets/Command_Vehicle/Flagship",
+        "Name": "Flagship",
+        "Display": {
+          "Title": "Flagship",
+          "Color": "#9aa3ad"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Command_Vehicle/Flagship/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 5,
+          "$id": "SunderedIsles/Assets/Command_Vehicle/Flagship/Condition_Meter",
+          "Name": "Integrity",
+          "Max": 5,
+          "Conditions": [
+            "Battered",
+            "Cursed"
+          ]
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Command_Vehicle/Flagship/Abilities/1",
+            "Text": "Your seagoing flagship is armed with cannons, transports crew, cargo, and passengers, and can equip support vehicle and module assets. In addition, it has up to 5 hold that acts as supply for you and your allies when taking action or suffering a cost related to shipwide gear and provisions.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Command_Vehicle/Flagship/Abilities/2",
+            "Text": "When you [Finish an Expedition](datasworn:move:starforged/exploration/finish_an_expedition) (dangerous or greater) on a seagoing journey and score a hit, this expedition strengthened your ties to your ship and crew. You and your allies may mark 1 tick on your bonds legacy track.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Command_Vehicle/Flagship/Abilities/3",
+            "Text": "You fly a distinctive flag. Envision its design. Once per situation, when you hoist the colors in a dramatic moment, you and your allies take +1 momentum.",
+            "Enabled": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Source": {
+      "Title": "Sundered Isles",
+      "Authors": [
+        "Shawn Tomkin"
+      ],
+      "Date": "2024-07-01"
+    },
+    "$id": "SunderedIsles/Assets/Support_Vehicle",
+    "Name": "Support Vehicle",
+    "Display": {
+      "Title": "Support Vehicle"
+    },
+    "Assets": [
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Support_Vehicle",
+        "$id": "SunderedIsles/Assets/Support_Vehicle/Captains_Boat",
+        "Name": "Captain's Boat",
+        "Display": {
+          "Title": "Captain's Boat",
+          "Color": "#495790"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Captains_Boat/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 3,
+          "$id": "SunderedIsles/Assets/Support_Vehicle/Captains_Boat/Condition_Meter",
+          "Name": "Integrity",
+          "Max": 3,
+          "Conditions": [
+            "Battered"
+          ]
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Captains_Boat/Abilities/1",
+            "Text": "Your sleek and speedy personal transport can carry a small number of crew or passengers. When you make a move to outrun a danger, pursue a target, or race against a deadline, add +1 and take +1 momentum on a hit.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Captains_Boat/Abilities/2",
+            "Text": "Your boat is armed with light cannons. When you [Clash](datasworn:move:starforged/combat/clash) by firing the cannons, you may add +integrity. If you do, take +1 momentum on a hit, but mark one fewer progress.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Captains_Boat/Abilities/3",
+            "Text": "Your boat is fitted with impressive or imposing regalia. When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by seeking to make an impression as you arrive at a location or event, you may roll +integrity. If you do, take +1 momentum or +1 spirit on a hit.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Support_Vehicle",
+        "$id": "SunderedIsles/Assets/Support_Vehicle/Diving_Bell",
+        "Name": "Diving Bell",
+        "Display": {
+          "Title": "Diving Bell",
+          "Color": "#495790"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Diving_Bell/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 3,
+          "$id": "SunderedIsles/Assets/Support_Vehicle/Diving_Bell/Condition_Meter",
+          "Name": "Integrity",
+          "Max": 3,
+          "Conditions": [
+            "Battered"
+          ]
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Diving_Bell/Abilities/1",
+            "Text": "Your diving bell carries passengers into the depths within an air-filled chamber. It offers a refuge when diving the seabed or while exploring underwater wrecks, ruins, or caves. When you set off from the bell on a perilous undersea dive, or return to the bell after a dive, take +1 momentum.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Diving_Bell/Abilities/2",
+            "Text": "Your diving bell is fitted with a rigid hull. When you [Face Danger](datasworn:move:starforged/adventure/face_danger) to test its strength against the crushing depths, roll +integrity and add +1. When you must [Withstand Damage](datasworn:move:starforged/suffer/withstand_damage) against pressure or impact, take +1 momentum or +1 integrity on a strong hit.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Diving_Bell/Abilities/3",
+            "Text": "When you use the diving bell to [Explore a Waypoint](datasworn:move:starforged/exploration/explore_a_waypoint), add +1.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Support_Vehicle",
+        "$id": "SunderedIsles/Assets/Support_Vehicle/Flying_Machine",
+        "Name": "Flying Machine",
+        "Display": {
+          "Title": "Flying Machine",
+          "Color": "#495790"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Flying_Machine/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 3,
+          "$id": "SunderedIsles/Assets/Support_Vehicle/Flying_Machine/Condition_Meter",
+          "Name": "Integrity",
+          "Max": 3,
+          "Conditions": [
+            "Battered"
+          ]
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Flying_Machine/Abilities/1",
+            "Text": "Your flying machine can carry you and a passenger on aerial missions. When you make a move to scout or survey from above, add +1 and take +1 momentum on a hit.",
+            "Enabled": true
+          },
+          {
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Flying_Machine/Abilities/2",
+            "Text": "When you perform a risky maneuver to overcome an obstacle or danger, you may add +integrity and take +2 momentum on a strong hit. If you do, count a weak hit as a miss.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Flying_Machine/Abilities/3",
+            "Text": "When you scout ahead as you [Set a Course](datasworn:move:starforged/exploration/set_a_course), add +1. On a strong hit with a match, you spot a remarkable location or opportunity en route. Mark 1 tick on your discoveries legacy track, envision what you find, and resolve the encounter. Then, continue to your destination.",
+            "Enabled": false
+          }
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01"
+        },
+        "Asset Type": "SunderedIsles/Assets/Support_Vehicle",
+        "$id": "SunderedIsles/Assets/Support_Vehicle/Longboat",
+        "Name": "Longboat",
+        "Display": {
+          "Title": "Longboat",
+          "Color": "#495790"
+        },
+        "Usage": {
+          "Shared": true
+        },
+        "Inputs": [
+          {
+            "Input Type": "Text",
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Longboat/Inputs/Name",
+            "Name": "Name",
+            "Adjustable": false
+          }
+        ],
+        "Condition Meter": {
+          "Min": 0,
+          "Value": 4,
+          "$id": "SunderedIsles/Assets/Support_Vehicle/Longboat/Condition_Meter",
+          "Name": "Integrity",
+          "Max": 4,
+          "Conditions": [
+            "Battered"
+          ]
+        },
+        "Abilities": [
+          {
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Longboat/Abilities/1",
+            "Text": "Your longboat transports crew, passengers, and cargo to and from your flagship. When you (or a landing party under your command) use the craft to haul provisions as you [Resupply](datasworn:move:starforged/recover/resupply), you may roll +integrity. If you do, take +1 supply or +1 momentum on a hit.",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Longboat/Abilities/2",
+            "Text": "Your longboat is reinforced to endure storms, shoals, and cannon fire. When you [Withstand Damage](datasworn:move:starforged/suffer/withstand_damage) and score a miss, reroll any dice. When you [Repair](datasworn:move:starforged/recover/repair) a battered longboat, clear the impact for 1 repair point (instead of 2).",
+            "Enabled": false
+          },
+          {
+            "$id": "SunderedIsles/Assets/Support_Vehicle/Longboat/Abilities/3",
+            "Text": "Your crew is trained for a stealthy approach. When you [Face Danger](datasworn:move:starforged/adventure/face_danger) or [Gain Ground](datasworn:move:starforged/combat/gain_ground) using your longboat to board an enemy vessel or land on hostile shores, add +1 and take +1 momentum on a hit.",
+            "Enabled": false
+          }
+        ]
+      }
+    ]
+  }
+]
