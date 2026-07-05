@@ -43,5 +43,125 @@
         "AllowFudge": true
       }
     ]
+  },
+  {
+    "Id": "SunderedIsles_Beast_Sea",
+    "SearchName": "Sundered Isles Beast (Sea)",
+    "title": "Sea Beast",
+    "game": "SunderedIsles",
+    "shortName": "Beast",
+    "InitialOracles": [
+      {
+        "FieldName": "Beast",
+        "FieldValue": "[[SunderedIsles/Oracles/Adventures/Beasts/Sea]]",
+        "HasModalOverride": false
+      }
+    ],
+    "FollowUpOracles": [
+      {
+        "FieldName": "Encountered Behavior",
+        "FieldValue": "Starforged/Oracles/Creatures/Encountered_Behavior",
+        "Emoji": "👋",
+        "AllowReroll": true,
+        "AllowFudge": true
+      },
+      {
+        "FieldName": "Revealed Aspect",
+        "FieldValue": "Starforged/Oracles/Creatures/Revealed_Aspect",
+        "Emoji": "👁️",
+        "AllowReroll": true,
+        "AllowFudge": true
+      }
+    ]
+  },
+  {
+    "Id": "SunderedIsles_Beast_Land",
+    "SearchName": "Sundered Isles Beast (Land)",
+    "title": "Land Beast",
+    "game": "SunderedIsles",
+    "shortName": "Beast",
+    "InitialOracles": [
+      {
+        "FieldName": "Beast",
+        "FieldValue": "[[SunderedIsles/Oracles/Adventures/Beasts/Land]]",
+        "HasModalOverride": false
+      }
+    ],
+    "FollowUpOracles": [
+      {
+        "FieldName": "Encountered Behavior",
+        "FieldValue": "Starforged/Oracles/Creatures/Encountered_Behavior",
+        "Emoji": "👋",
+        "AllowReroll": true,
+        "AllowFudge": true
+      },
+      {
+        "FieldName": "Revealed Aspect",
+        "FieldValue": "Starforged/Oracles/Creatures/Revealed_Aspect",
+        "Emoji": "👁️",
+        "AllowReroll": true,
+        "AllowFudge": true
+      }
+    ]
+  },
+  {
+    "Id": "SunderedIsles_Beast_Shore_And_River",
+    "SearchName": "Sundered Isles Beast (Shore & River)",
+    "title": "Shore & River Beast",
+    "game": "SunderedIsles",
+    "shortName": "Beast",
+    "InitialOracles": [
+      {
+        "FieldName": "Beast",
+        "FieldValue": "[[SunderedIsles/Oracles/Adventures/Beasts/Shore_And_River]]",
+        "HasModalOverride": false
+      }
+    ],
+    "FollowUpOracles": [
+      {
+        "FieldName": "Encountered Behavior",
+        "FieldValue": "Starforged/Oracles/Creatures/Encountered_Behavior",
+        "Emoji": "👋",
+        "AllowReroll": true,
+        "AllowFudge": true
+      },
+      {
+        "FieldName": "Revealed Aspect",
+        "FieldValue": "Starforged/Oracles/Creatures/Revealed_Aspect",
+        "Emoji": "👁️",
+        "AllowReroll": true,
+        "AllowFudge": true
+      }
+    ]
+  },
+  {
+    "Id": "SunderedIsles_Beast_Sky",
+    "SearchName": "Sundered Isles Beast (Sky)",
+    "title": "Sky Beast",
+    "game": "SunderedIsles",
+    "shortName": "Beast",
+    "InitialOracles": [
+      {
+        "FieldName": "Beast",
+        "FieldValue": "[[SunderedIsles/Oracles/Adventures/Beasts/Sky]]",
+        "HasModalOverride": false
+      }
+    ],
+    "FollowUpOracles": [
+      {
+        "FieldName": "Encountered Behavior",
+        "FieldValue": "Starforged/Oracles/Creatures/Encountered_Behavior",
+        "Emoji": "👋",
+        "AllowReroll": true,
+        "AllowFudge": true
+      },
+      {
+        "FieldName": "Revealed Aspect",
+        "FieldValue": "Starforged/Oracles/Creatures/Revealed_Aspect",
+        "Emoji": "👁️",
+        "AllowReroll": true,
+        "AllowFudge": true
+      }
+    ]
   }
 ]
