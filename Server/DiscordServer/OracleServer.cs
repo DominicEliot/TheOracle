@@ -110,14 +110,13 @@ class OracleServer
     static ServiceProvider ConfigureServices()
     {
         var config = new ConfigurationBuilder()
-            .AddJsonFile("token.json", optional: true, reloadOnChange: true)
-            .AddJsonFile("dbSettings.json", optional: false, reloadOnChange: true)
             .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("token.json", optional: true, reloadOnChange: true)
+            .AddJsonFile("dbSettings.json", optional: true, reloadOnChange: true)
+            .AddEnvironmentVariables()
             .Build();
 
-        var dbConn = config.GetSection("dbConnectionString").Value;
-        var dbPass = config.GetSection("dbPassword").Value;
-        var dbConnBuilder = new NpgsqlConnectionStringBuilder(dbConn) { Password = dbPass };
+        var dbConnectionString = ResolveNpgsqlConnectionString(config);
 
         var clientConfig = new DiscordSocketConfig { MessageCacheSize = 100, LogLevel = LogSeverity.Info, GatewayIntents = GatewayIntents.DirectMessages | GatewayIntents.GuildMessages | GatewayIntents.Guilds };
         var interactionServiceConfig = new InteractionServiceConfig() { UseCompiledLambda = true, LogLevel = LogSeverity.Info, AutoServiceScopes = true };
@@ -151,8 +150,46 @@ class OracleServer
                 .AddFilter("Microsoft.EntityFrameworkCore.Database.Command", LogLevel.Warning)
                 .AddFilter("Microsoft.EntityFrameworkCore.Infrastructure", LogLevel.Warning)
                 )
-            .AddDbContext<ApplicationContext>(options => options.UseNpgsql(dbConnBuilder.ConnectionString))
+            .AddDbContext<ApplicationContext>(options => options.UseNpgsql(dbConnectionString))
             .BuildServiceProvider();
+    }
+
+    // Resolves the Postgres connection string, in order of preference:
+    //  1. DATABASE_URL (postgres://user:pass@host:port/db) as handed out by Railway,
+    //     Render, Neon, Fly, etc. — the easiest path for hosted deployments.
+    //  2. dbConnectionString + dbPassword, from environment variables or dbSettings.json.
+    private static string ResolveNpgsqlConnectionString(IConfiguration config)
+    {
+        var url = config.GetSection("DATABASE_URL").Value;
+        if (!string.IsNullOrWhiteSpace(url) &&
+            (url.StartsWith("postgres://", StringComparison.OrdinalIgnoreCase) ||
+             url.StartsWith("postgresql://", StringComparison.OrdinalIgnoreCase)))
+        {
+            var uri = new Uri(url);
+            var userInfo = uri.UserInfo.Split(':', 2);
+            return new NpgsqlConnectionStringBuilder
+            {
+                Host = uri.Host,
+                Port = uri.Port > 0 ? uri.Port : 5432,
+                Database = uri.AbsolutePath.TrimStart('/'),
+                Username = Uri.UnescapeDataString(userInfo[0]),
+                Password = userInfo.Length > 1 ? Uri.UnescapeDataString(userInfo[1]) : null,
+                // Hosted Postgres requires TLS; trust the provider's certificate by default.
+                SslMode = SslMode.Require,
+                TrustServerCertificate = true,
+            }.ConnectionString;
+        }
+
+        var dbConn = config.GetSection("dbConnectionString").Value;
+        if (string.IsNullOrWhiteSpace(dbConn))
+        {
+            throw new InvalidOperationException(
+                "No database configuration found. Set DATABASE_URL, or provide dbConnectionString " +
+                "and dbPassword via environment variables or a dbSettings.json file.");
+        }
+
+        var dbPass = config.GetSection("dbPassword").Value;
+        return new NpgsqlConnectionStringBuilder(dbConn) { Password = dbPass }.ConnectionString;
     }
 
     private static string GetToken(IServiceProvider services)
@@ -162,6 +199,13 @@ class OracleServer
 
         if (token == null)
         {
+            if (Console.IsInputRedirected)
+            {
+                throw new InvalidOperationException(
+                    "DiscordToken is not set. Provide it via the DiscordToken environment variable " +
+                    "(recommended for hosted deployments) or a token.json file.");
+            }
+
             Console.WriteLine($"Couldn't find a discord token. Please enter it here. (It will be saved to the token.json file in your bin folder)");
             token = Console.ReadLine();
 

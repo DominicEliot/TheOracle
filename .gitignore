@@ -376,3 +376,7 @@ token.json
 # gamecontent db
 GameContent.db
 GameContent.db*
+
+# Deployment secrets (keep .env.example tracked, ignore the real .env)
+.env
+!.env.example

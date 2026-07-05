@@ -1,0 +1,37 @@
+# Self-host the bot and its database together (local machine or a VPS).
+#
+#   1. Copy .env.example to .env and fill in DISCORD_TOKEN and DB_PASSWORD.
+#   2. docker compose up -d --build
+#
+# The bot creates its own schema on first run (EnsureCreated), so the database
+# only needs to exist — no migrations to run by hand.
+
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: OracleDB
+      POSTGRES_USER: OracleUser
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U OracleUser -d OracleDB"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  bot:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DiscordToken: ${DISCORD_TOKEN:?set DISCORD_TOKEN in .env}
+      dbConnectionString: "Host=db;Port=5432;Database=OracleDB;Username=OracleUser"
+      dbPassword: ${DB_PASSWORD}
+
+volumes:
+  pgdata:
