@@ -33,6 +33,7 @@ public class JsonMoveRepository : IMoveRepository
             _moves = new List<MoveRoot>();
             var files = new DirectoryInfo(Path.Combine("Data", "ironsworn")).GetFiles("*moves*.json").ToList();
             files.AddRange(new DirectoryInfo(Path.Combine("Data", "starforged")).GetFiles("*moves*.json").ToList());
+            files.AddRange(new DirectoryInfo(Path.Combine("Data", "sundered")).GetFiles("*moves*.json").ToList());
 
             foreach (var file in files)
             {

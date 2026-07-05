@@ -1,0 +1,538 @@
+[
+  {
+    "$id": "SunderedIsles/Moves/Exploration",
+    "Name": "Exploration",
+    "Source": {
+      "Title": "Sundered Isles",
+      "Authors": [
+        "Shawn Tomkin"
+      ],
+      "Date": "2024-07-01",
+      "Page": 242
+    },
+    "Display": {
+      "Title": "Exploration"
+    },
+    "Optional": false,
+    "Moves": [
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01",
+          "Page": 242
+        },
+        "Category": "SunderedIsles/Moves/Exploration",
+        "$id": "SunderedIsles/Moves/Exploration/Undertake_an_Expedition",
+        "Name": "Undertake an Expedition",
+        "Optional": false,
+        "Display": {
+          "Title": "Undertake an Expedition",
+          "Color": "#7438B8"
+        },
+        "Trigger": {
+          "$id": "SunderedIsles/Moves/Exploration/Undertake_an_Expedition/Trigger",
+          "Text": "When you sail an unfamiliar route through perilous seas, find the way across hazardous terrain, or explore a mysterious site...",
+          "Options": [
+            {
+              "$id": "SunderedIsles/Moves/Exploration/Undertake_an_Expedition/Trigger/Options/1",
+              "Text": "Move at speed",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Edge"
+              ]
+            },
+            {
+              "$id": "SunderedIsles/Moves/Exploration/Undertake_an_Expedition/Trigger/Options/2",
+              "Text": "Keep under the radar",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Shadow"
+              ]
+            },
+            {
+              "$id": "SunderedIsles/Moves/Exploration/Undertake_an_Expedition/Trigger/Options/3",
+              "Text": "Stay vigilant",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Wits"
+              ]
+            }
+          ]
+        },
+        "Text": "**When you sail an unfamiliar route through perilous seas, find the way across hazardous terrain, or explore a mysterious site**, give the expedition a name and rank.\n\nThen, for each segment of the expedition, envision your approach. If you...\n\n  * Move at speed: Roll +edge\n  * Keep a low profile: Roll +shadow\n  * Stay vigilant: Roll +wits\n\nOn a **strong hit**, you reach a waypoint. Envision the location and mark progress per the rank of the expedition.\n\nOn a **weak hit**, as above, but this progress costs you. Choose one.\n\n  * Suffer costs en route: Make a suffer move (-2), or two suffer moves (-1).\n  * Face a peril at the waypoint: Envision what you encounter.\n\nOn a **miss**, you are waylaid by a crisis, or arrive at a waypoint to confront an immediate hardship or threat. Do not mark progress, and Pay the Price.",
+        "Outcomes": {
+          "$id": "SunderedIsles/Moves/Exploration/Undertake_an_Expedition/Outcomes",
+          "Strong Hit": {
+            "$id": "SunderedIsles/Moves/Exploration/Undertake_an_Expedition/Outcomes/Strong_Hit",
+            "Text": "On a **strong hit**, you reach a waypoint. Envision the location and mark progress per the rank of the expedition."
+          },
+          "Weak Hit": {
+            "$id": "SunderedIsles/Moves/Exploration/Undertake_an_Expedition/Outcomes/Weak_Hit",
+            "Text": "On a **weak hit**, you reach a waypoint, but this progress costs you. Envision the location and mark progress per the rank of the expedition, but choose one.\n\n  * Suffer costs en route: Make a suffer move (-2), or two suffer moves (-1).\n  * Face a peril at the waypoint: Envision what you encounter."
+          },
+          "Miss": {
+            "$id": "SunderedIsles/Moves/Exploration/Undertake_an_Expedition/Outcomes/Miss",
+            "Text": "On a **miss**, you are waylaid by a crisis, or arrive at a waypoint to confront an immediate hardship or threat. Do not mark progress, and Pay the Price."
+          }
+        },
+        "Replaces": [
+          "Starforged/Moves/Exploration/Undertake_an_Expedition"
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01",
+          "Page": 243
+        },
+        "Category": "SunderedIsles/Moves/Exploration",
+        "$id": "SunderedIsles/Moves/Exploration/Make_a_Discovery",
+        "Name": "Make a Discovery",
+        "Optional": false,
+        "Display": {
+          "Title": "Make a Discovery",
+          "Color": "#7438B8"
+        },
+        "Trigger": {
+          "$id": "SunderedIsles/Moves/Exploration/Make_a_Discovery/Trigger",
+          "Text": "When your exploration of a waypoint uncovers something wondrous..."
+        },
+        "Text": "**When your exploration of a waypoint uncovers something wondrous**, roll on the table below or choose one. Then, envision the nature of the discovery and how it is revealed. When you first experience or engage with the discovery, you and your allies may mark two ticks on your discoveries legacy track.\n\n{{table>move.oracle_rollable:sundered_isles/exploration/make_a_discovery.make_a_discovery}}",
+        "Replaces": [
+          "Starforged/Moves/Exploration/Make_a_Discovery"
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01",
+          "Page": 243
+        },
+        "Category": "SunderedIsles/Moves/Exploration",
+        "$id": "SunderedIsles/Moves/Exploration/Confront_Chaos",
+        "Name": "Confront Chaos",
+        "Optional": false,
+        "Display": {
+          "Title": "Confront Chaos",
+          "Color": "#7438B8"
+        },
+        "Trigger": {
+          "$id": "SunderedIsles/Moves/Exploration/Confront_Chaos/Trigger",
+          "Text": "When your exploration of a waypoint uncovers something dreadful..."
+        },
+        "Text": "**When your exploration of a waypoint uncovers something dreadful**, decide the number of aspects: one, two, or three. Roll that number of times or choose that number of aspects on the table below. Then, envision how the encounter begins.\n\nFor each result, when you first confront that aspect within the scope of the encounter, you and your allies may mark one tick on your discoveries legacy track.\n\n{{table>move.oracle_rollable:sundered_isles/exploration/confront_chaos.confront_chaos}}",
+        "Replaces": [
+          "Starforged/Moves/Exploration/Confront_Chaos"
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01",
+          "Page": 242
+        },
+        "Category": "SunderedIsles/Moves/Exploration",
+        "$id": "SunderedIsles/Moves/Exploration/Set_a_Course",
+        "Name": "Set a Course",
+        "Optional": false,
+        "Display": {
+          "Title": "Set a Course",
+          "Color": "#7438B8"
+        },
+        "Trigger": {
+          "$id": "SunderedIsles/Moves/Exploration/Set_a_Course/Trigger",
+          "Text": "When you follow a known route through perilous space, across hazardous terrain, or within a mysterious site...",
+          "Options": [
+            {
+              "$id": "SunderedIsles/Moves/Exploration/Set_a_Course/Trigger/Options/1",
+              "Text": null,
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Condition_meter",
+                "Asset_control"
+              ]
+            }
+          ]
+        },
+        "Text": "**When you travel a known route through perilous seas, across hazardous terrain, or within a mysterious site**, roll +supply.\n\nOn a **strong hit**, you reach your destination and the situation there favors you. Take +1 momentum.\n\nOn a **weak hit**, you arrive, but face a cost or complication. Choose one.\n\n  * Suffer costs en route: Make a suffer move (-2), or two suffer moves (-1).\n  * Face a complication at the destination: Envision what you encounter.\n\nOn a **miss**, you are waylaid by a significant threat, and must Pay the Price. If you overcome this obstacle, you may push on safely to your destination.",
+        "Outcomes": {
+          "$id": "SunderedIsles/Moves/Exploration/Set_a_Course/Outcomes",
+          "Strong Hit": {
+            "$id": "SunderedIsles/Moves/Exploration/Set_a_Course/Outcomes/Strong_Hit",
+            "Text": "On a **strong hit**, you reach your destination and the situation there favors you. Take +1 momentum."
+          },
+          "Weak Hit": {
+            "$id": "SunderedIsles/Moves/Exploration/Set_a_Course/Outcomes/Weak_Hit",
+            "Text": "On a **weak hit**, you arrive, but face a cost or complication. Choose one.\n\n  * Suffer costs en route: Make a suffer move (-2), or two suffer moves (-1).\n  * Face a complication at the destination: Envision what you encounter."
+          },
+          "Miss": {
+            "$id": "SunderedIsles/Moves/Exploration/Set_a_Course/Outcomes/Miss",
+            "Text": "On a **miss**, you are waylaid by a significant threat, and must Pay the Price. If you overcome this obstacle, you may push on safely to your destination."
+          }
+        },
+        "Replaces": [
+          "Starforged/Moves/Exploration/Set_a_Course"
+        ]
+      }
+    ]
+  },
+  {
+    "$id": "SunderedIsles/Moves/Combat",
+    "Name": "Combat",
+    "Source": {
+      "Title": "Sundered Isles",
+      "Authors": [
+        "Shawn Tomkin"
+      ],
+      "Date": "2024-07-01",
+      "Page": 244
+    },
+    "Display": {
+      "Title": "Combat"
+    },
+    "Optional": false,
+    "Moves": [
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01",
+          "Page": 244
+        },
+        "Category": "SunderedIsles/Moves/Combat",
+        "$id": "SunderedIsles/Moves/Combat/Enter_the_Fray",
+        "Name": "Enter the Fray",
+        "Optional": false,
+        "Display": {
+          "Title": "Enter the Fray",
+          "Color": "#9E2B24"
+        },
+        "Trigger": {
+          "$id": "SunderedIsles/Moves/Combat/Enter_the_Fray/Trigger",
+          "Text": "When you initiate combat or are forced into a fight...",
+          "Options": [
+            {
+              "$id": "SunderedIsles/Moves/Combat/Enter_the_Fray/Trigger/Options/1",
+              "Text": "On the move or maneuvering",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Edge"
+              ]
+            },
+            {
+              "$id": "SunderedIsles/Moves/Combat/Enter_the_Fray/Trigger/Options/2",
+              "Text": "In command or facing off against your foe",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Heart"
+              ]
+            },
+            {
+              "$id": "SunderedIsles/Moves/Combat/Enter_the_Fray/Trigger/Options/3",
+              "Text": "In the thick of it at close quarters",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Iron"
+              ]
+            },
+            {
+              "$id": "SunderedIsles/Moves/Combat/Enter_the_Fray/Trigger/Options/4",
+              "Text": "Preparing to act against an unaware foe",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Shadow"
+              ]
+            },
+            {
+              "$id": "SunderedIsles/Moves/Combat/Enter_the_Fray/Trigger/Options/5",
+              "Text": "Caught in a trap or sizing up the situation",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Wits"
+              ]
+            }
+          ]
+        },
+        "Text": "**When you initiate combat or are forced into a fight**, envision your objective and give it a rank. If the combat includes discrete challenges or phases, set an objective with a rank for each.\n\nThen, roll to see if you are in control. If you are...\n\n  * On the move or maneuvering: Roll +edge\n  * In command or facing off against your foe: Roll +heart\n  * In the thick of it at close quarters: Roll +iron\n  * Preparing to act against an unaware foe: Roll +shadow\n  * Caught in a trap or sizing up the situation: Roll +wits\n\nOn a **strong hit**, take both. On a **weak hit**, choose one.\n\n  * Take +2 momentum\n  * You are in control\n\nOn a **miss**, the fight begins with you in a bad spot.",
+        "Outcomes": {
+          "$id": "SunderedIsles/Moves/Combat/Enter_the_Fray/Outcomes",
+          "Strong Hit": {
+            "$id": "SunderedIsles/Moves/Combat/Enter_the_Fray/Outcomes/Strong_Hit",
+            "Text": "On a **strong hit**, take +2 momentum. You are in control."
+          },
+          "Weak Hit": {
+            "$id": "SunderedIsles/Moves/Combat/Enter_the_Fray/Outcomes/Weak_Hit",
+            "Text": "On a **weak hit**, choose one.\n\n  * Take +2 momentum\n  * You are in control"
+          },
+          "Miss": {
+            "$id": "SunderedIsles/Moves/Combat/Enter_the_Fray/Outcomes/Miss",
+            "Text": "On a **miss**, the fight begins with you in a bad spot."
+          }
+        },
+        "Replaces": [
+          "Starforged/Moves/Combat/Enter_the_Fray"
+        ]
+      }
+    ]
+  },
+  {
+    "$id": "SunderedIsles/Moves/Suffer",
+    "Name": "Suffer",
+    "Source": {
+      "Title": "Sundered Isles",
+      "Authors": [
+        "Shawn Tomkin"
+      ],
+      "Date": "2024-07-01",
+      "Page": 246
+    },
+    "Display": {
+      "Title": "Suffer"
+    },
+    "Optional": false,
+    "Moves": [
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01",
+          "Page": 247
+        },
+        "Category": "SunderedIsles/Moves/Suffer",
+        "$id": "SunderedIsles/Moves/Suffer/Withstand_Damage",
+        "Name": "Withstand Damage",
+        "Optional": false,
+        "Display": {
+          "Title": "Withstand Damage",
+          "Color": "#427CC4"
+        },
+        "Trigger": {
+          "$id": "SunderedIsles/Moves/Suffer/Withstand_Damage/Trigger",
+          "Text": "When your vehicle faces a damaging situation or environment...",
+          "Options": [
+            {
+              "$id": "SunderedIsles/Moves/Suffer/Withstand_Damage/Trigger/Options/1",
+              "Text": null,
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Asset_control"
+              ]
+            }
+          ]
+        },
+        "Text": "**When your vehicle faces a damaging situation or environment**, suffer -1 integrity for minor damage, -2 for serious damage, or -3 for major damage. If your integrity is 0, Lose Momentum equal to any remaining damage.\n\nThen, if your integrity is 0 or you choose to resist the damage, roll +integrity.\n\nOn a **strong hit**, choose one.\n\n  * Bypass: If your vehicle is not battered, take +1 integrity\n  * Ride it out: Take +1 momentum\n\nOn a **weak hit**, if your vehicle is not battered, you may Lose Momentum (-1) in exchange for +1 integrity. Otherwise, carry on.\n\nOn a **miss**, it's worse than you thought. Suffer an additional -1 integrity or Lose Momentum (-2). If your integrity is 0, also suffer a cost according to the vehicle type.\n\n  * **Command vehicle:** Mark the vehicle as **battered** or **cursed**, mark a module as **broken**, destroy a broken module by discarding it, or roll on the table below. If the command vehicle is destroyed or sunk, Overcome Destruction.\n  * **Support vehicle:** Mark the vehicle as **battered** or roll on the table below. If the vehicle is destroyed or sunk, discard the asset.\n  * **Incidental vehicle:** Roll on the table below.\n\n{{table>move.oracle_rollable:starforged/suffer/withstand_damage.withstand_damage}}",
+        "Outcomes": {
+          "$id": "SunderedIsles/Moves/Suffer/Withstand_Damage/Outcomes",
+          "Strong Hit": {
+            "$id": "SunderedIsles/Moves/Suffer/Withstand_Damage/Outcomes/Strong_Hit",
+            "Text": "On a **strong hit**, choose one.\n\n  * Bypass: If your vehicle is not battered, take +1 integrity\n  * Ride it out: Take +1 momentum"
+          },
+          "Weak Hit": {
+            "$id": "SunderedIsles/Moves/Suffer/Withstand_Damage/Outcomes/Weak_Hit",
+            "Text": "On a **weak hit**, if your vehicle is not battered, you may Lose Momentum (-1) in exchange for +1 integrity. Otherwise, carry on."
+          },
+          "Miss": {
+            "$id": "SunderedIsles/Moves/Suffer/Withstand_Damage/Outcomes/Miss",
+            "Text": "On a **miss**, it's worse than you thought. Suffer an additional -1 integrity or Lose Momentum (-2). If your integrity is 0, also suffer a cost according to the vehicle type.\n\n  * **Command vehicle:** Mark the vehicle as **battered** or **cursed**, mark a module as **broken**, destroy a broken module by discarding it, or roll on the table below. If the command vehicle is destroyed or sunk, Overcome Destruction.\n  * **Support vehicle:** Mark the vehicle as **battered** or roll on the table below. If the vehicle is destroyed or sunk, discard the asset.\n  * **Incidental vehicle:** Roll on the table below.\n\n{{table>move.oracle_rollable/starforged/suffer/withstand_damage.withstand_damage}}"
+          }
+        },
+        "Replaces": [
+          "Starforged/Moves/Suffer/Withstand_Damage"
+        ]
+      }
+    ]
+  },
+  {
+    "$id": "SunderedIsles/Moves/Recover",
+    "Name": "Recover",
+    "Source": {
+      "Title": "Sundered Isles",
+      "Authors": [
+        "Shawn Tomkin"
+      ],
+      "Date": "2024-07-01",
+      "Page": 248
+    },
+    "Display": {
+      "Title": "Recover"
+    },
+    "Optional": false,
+    "Moves": [
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01",
+          "Page": 248
+        },
+        "Category": "SunderedIsles/Moves/Recover",
+        "$id": "SunderedIsles/Moves/Recover/Resupply",
+        "Name": "Resupply",
+        "Optional": false,
+        "Display": {
+          "Title": "Resupply",
+          "Color": "#3F8C6A"
+        },
+        "Trigger": {
+          "$id": "SunderedIsles/Moves/Recover/Resupply/Trigger",
+          "Text": "When you attempt to bolster your readiness...",
+          "Options": [
+            {
+              "$id": "SunderedIsles/Moves/Recover/Resupply/Trigger/Options/1",
+              "Text": "Barter or make an appeal",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Heart"
+              ]
+            },
+            {
+              "$id": "SunderedIsles/Moves/Recover/Resupply/Trigger/Options/2",
+              "Text": "Threaten or seize",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Iron"
+              ]
+            },
+            {
+              "$id": "SunderedIsles/Moves/Recover/Resupply/Trigger/Options/3",
+              "Text": "Steal or swindle",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Shadow"
+              ]
+            },
+            {
+              "$id": "SunderedIsles/Moves/Recover/Resupply/Trigger/Options/4",
+              "Text": "Scavenge or craft",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Wits"
+              ]
+            },
+            {
+              "$id": "SunderedIsles/Moves/Recover/Resupply/Trigger/Options/5",
+              "Text": "Gear up from your ship's stores",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Asset_control"
+              ]
+            }
+          ]
+        },
+        "Text": "**When you attempt to bolster your readiness**, envision the opportunity and your approach. If you...\n\n  * Barter or make an appeal: Roll +heart\n  * Threaten or seize: Roll +iron\n  * Steal or swindle: Roll +shadow\n  * Scavenge or craft: Roll +wits\n  * Gear up from your ship's stores: Roll +supply (hold)\n\nOn a **strong hit**, choose one.\n\n  * If you are unprepared, clear the impact and take +1 supply. Otherwise, take +2 supply.\n  * If you are in need of a specific item or resource that can reasonably be obtained, you acquire it. Take +1 momentum.\n\nOn a **weak hit**, as above, but you must first deal with a cost, complication, or demand. Envision the nature of this obstacle.\n\nOn a **miss**, you encounter an unexpected peril. Pay the Price.",
+        "Outcomes": {
+          "$id": "SunderedIsles/Moves/Recover/Resupply/Outcomes",
+          "Strong Hit": {
+            "$id": "SunderedIsles/Moves/Recover/Resupply/Outcomes/Strong_Hit",
+            "Text": "On a **strong hit**, choose one.\n\n  * If you are unprepared, clear the impact and take +1 supply. Otherwise, take +2 supply.\n  * If you are in need of a specific item or resource that can reasonably be obtained, you acquire it. Take +1 momentum."
+          },
+          "Weak Hit": {
+            "$id": "SunderedIsles/Moves/Recover/Resupply/Outcomes/Weak_Hit",
+            "Text": "On a **weak hit**, you must first deal with a cost, complication, or demand. Envision the nature of this obstacle.\n\nThen choose one.\n\n  * If you are unprepared, clear the impact and take +1 supply. Otherwise, take +2 supply.\n  * If you are in need of a specific item or resource that can reasonably be obtained, you acquire it. Take +1 momentum."
+          },
+          "Miss": {
+            "$id": "SunderedIsles/Moves/Recover/Resupply/Outcomes/Miss",
+            "Text": "On a **miss**, you encounter an unexpected peril. Pay the Price."
+          }
+        },
+        "Replaces": [
+          "Starforged/Moves/Recover/Resupply"
+        ]
+      },
+      {
+        "Source": {
+          "Title": "Sundered Isles",
+          "Authors": [
+            "Shawn Tomkin"
+          ],
+          "Date": "2024-07-01",
+          "Page": 249
+        },
+        "Category": "SunderedIsles/Moves/Recover",
+        "$id": "SunderedIsles/Moves/Recover/Repair",
+        "Name": "Repair",
+        "Optional": false,
+        "Display": {
+          "Title": "Repair",
+          "Color": "#3F8C6A"
+        },
+        "Trigger": {
+          "$id": "SunderedIsles/Moves/Recover/Repair/Trigger",
+          "Text": "When you make repairs to your vehicles, modules, mechanical companions, or other equipment...",
+          "Options": [
+            {
+              "$id": "SunderedIsles/Moves/Recover/Repair/Trigger/Options/1",
+              "Text": "Make your own repairs, or direct companions or crewmembers to make repairs",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Wits"
+              ]
+            },
+            {
+              "$id": "SunderedIsles/Moves/Recover/Repair/Trigger/Options/2",
+              "Text": "Obtain repair services at a facility",
+              "Roll type": "Action roll",
+              "Method": "Any",
+              "Using": [
+                "Heart"
+              ]
+            }
+          ]
+        },
+        "Text": "**When you make repairs to your vehicles, modules, mechanical companions, or other equipment**, envision the situation and roll. If you...\n\n  * Make your own repairs, or direct companions or crewmembers to make repairs: Roll +wits\n  * Obtain repair services at a facility: Roll +heart\n\nOn a **hit**, you gain repair points as appropriate to the situation, per the table below. Additionally, if you make your own repairs, you may Sacrifice Resources (hold) and exchange each -1 of supply for 1 extra repair point (up to 3 points).\n\nSituation     | Strong Hit | Weak Hit\n--------------|------------|---------\nAt a facility |\t7 points \t | 5 points\nAt anchor \t  | 4 points \t | 2 points\nUnderway \t    | 3 points \t | 1 points\nUnder fire \t  | 2 points \t | 0 points\n\nSpend repair points as follows. Unused points are discarded.\n\n  * Clear the battered impact on a vehicle: 2 points\n  * Fix one broken module: 2 points\n  * Take +1 integrity on a vehicle: 1 point\n  * Take +1 health for a mechanical companion: 1 point\n  * Repair any other component or device: 3 points\n  * Repair any other equipment or device, but with a complication or malfunction: 2 points\n\nOn a **miss**, the repairs are not made and the situation worsens. Pay the Price.",
+        "Outcomes": {
+          "$id": "SunderedIsles/Moves/Recover/Repair/Outcomes",
+          "Strong Hit": {
+            "$id": "SunderedIsles/Moves/Recover/Repair/Outcomes/Strong_Hit",
+            "Text": "On a **strong hit**, you gain repair points as appropriate to the situation, per the table below.\n\nSituation     | Strong Hit | Weak Hit\n--------------|------------|---------\nAt a facility |\t7 points \t | 5 points\nAt anchor \t  | 4 points \t | 2 points\nUnderway \t    | 3 points \t | 1 points\nUnder fire \t  | 2 points \t | 0 points\n\nAdditionally, you may Sacrifice Resources and exchange each -1 of supply for 1 extra repair point (up to 3 points).\n\nSpend repair points as follows. Unused points are discarded.\n\n  * Clear the battered impact on a vehicle: 2 points\n  * Fix one broken module: 2 points\n  * Take +1 integrity on a vehicle: 1 point\n  * Take +1 health for a mechanical companion: 1 point\n  * Repair any other device: 3 points\n  * Repair any other device, but with a complication or malfunction: 2 points"
+          },
+          "Weak Hit": {
+            "$id": "SunderedIsles/Moves/Recover/Repair/Outcomes/Weak_Hit",
+            "Text": "On a **weak hit**, you gain repair points as appropriate to the situation, per the table below.\n\nSituation     | Strong Hit | Weak Hit\n--------------|------------|---------\nAt a facility |\t7 points \t | 5 points\nAt anchor \t  | 4 points \t | 2 points\nUnderway \t    | 3 points \t | 1 points\nUnder fire \t  | 2 points \t | 0 points\n\nAdditionally, you may Sacrifice Resources and exchange each -1 of supply for 1 extra repair point (up to 3 points).\n\nSpend repair points as follows. Unused points are discarded.\n\n  * Clear the battered impact on a vehicle: 2 points\n  * Fix one broken module: 2 points\n  * Take +1 integrity on a vehicle: 1 point\n  * Take +1 health for a mechanical companion: 1 point\n  * Repair any other device: 3 points\n  * Repair any other device, but with a complication or malfunction: 2 points"
+          },
+          "Miss": {
+            "$id": "SunderedIsles/Moves/Recover/Repair/Outcomes/Miss",
+            "Text": "On a **miss**, the repairs are not made and the situation worsens. Pay the Price."
+          }
+        },
+        "Replaces": [
+          "Starforged/Moves/Recover/Repair"
+        ]
+      }
+    ]
+  }
+]
