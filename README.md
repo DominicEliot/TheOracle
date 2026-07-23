@@ -36,5 +36,18 @@ note: This is for people that want to change the source code and run their own i
 * Get a discord bot token from the discord developer portal
 * Start the bot server, paste your token when prompted. (If you need to change the token it's stored in the token.json file in your server's folder)
 
+## AI generated code
+This project was originally written without the use of AI generated code, but user contributions are allowed to use AI tools to generate code and documentation. All the code and documentation in this project is reviewed by humans before being approved.
+
+### AI generated contributions:
+I recognize that AI assisted coding and fully generated AI code is becoming more and more common for developers. It can improve productivity, and help people make changes to the project more quickly. Unfortunately AI generated code often has subtle bugs, can be hard to follow, and can create additional work for project maintainers. This project allows contributions to be made that are generated using AI tools, but low effort PRs that appear to be entirely created with AI maybe be closed at anytime.
+
+When submitting a PR using AI generated content:
+* You must be open with the use AI generated content, and summarize what was generated
+* Match the style and conventions of the project
+* You own the changes, meaning that you will be responsible for debugging, testing, and possibly fixing any issues
+    * A PR is a collaborative learning experience, if there are parts you don't understand be upfront with them in the PR comments
+* Watch for AI's tendency to generate code with verbose/unnecessary comments, and unnecessary unit tests
+
 ## Privacy
 TheOracle bot doesn't store any user data of any kind, except for commands that are explicitly handled by the bot. Any data collected will not be sold or used for anything other than further developing and improvement of the bot.
