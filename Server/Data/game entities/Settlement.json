@@ -162,5 +162,45 @@
         "AllowFudge": true
       }
     ]
+  },
+  {
+    "Id": "SunderedIsles_Settlement",
+    "SearchName": "Sundered Isles Settlement",
+    "title": "[[SunderedIsles/Oracles/Settlement/Name]]",
+    "shortName": "Settlement",
+    "author": "Sundered Isles Settlement",
+    "game": "SunderedIsles",
+    "InitialOracles": [
+      {
+        "FieldName": "Location",
+        "FieldValue": "[[SunderedIsles/Oracles/Settlement/Location]]",
+        "HasModalOverride": false
+      },
+      {
+        "FieldName": "First Look",
+        "FieldValue": "[[SunderedIsles/Oracles/Settlement/First_Look]]"
+      },
+      {
+        "FieldName": "Aesthetics",
+        "FieldValue": "[[SunderedIsles/Oracles/Settlement/Aesthetics]]"
+      },
+      {
+        "FieldName": "Authority",
+        "FieldValue": "[[SunderedIsles/Oracles/Settlement/Identity/Authority]]"
+      },
+      {
+        "FieldName": "Disposition",
+        "FieldValue": "[[SunderedIsles/Oracles/Settlement/Identity/Disposition]]"
+      }
+    ],
+    "FollowUpOracles": [
+      {
+        "FieldName": "Details",
+        "FieldValue": "SunderedIsles/Oracles/Settlement/Details",
+        "Emoji": "📝",
+        "AllowReroll": true,
+        "AllowFudge": true
+      }
+    ]
   }
 ]

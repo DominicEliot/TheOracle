@@ -117,6 +117,11 @@ public class Oracle
     [JsonProperty("Member of")]
     public string MemberOf { get; set; }
 
+    // Base-game oracle ids this oracle supersedes (used by Sundered Isles to override
+    // the Starforged tables it reskins). Null for base-game oracles.
+    [JsonProperty("Replaces")]
+    public List<string>? Replaces { get; set; }
+
     [JsonIgnore]
     public OracleRoot? Parent { get; set; }
 }

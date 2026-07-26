@@ -113,5 +113,60 @@
         "AllowFudge": true
       }
     ]
+  },
+  {
+    "Id": "SunderedIsles_NPC",
+    "SearchName": "Sundered Isles NPC",
+    "title": "NPC",
+    "game": "SunderedIsles",
+    "InitialOracles": [
+      {
+        "FieldName": "Name",
+        "FieldValue": "[[SunderedIsles/Oracles/Character/Name/Given_Name]] [[SunderedIsles/Oracles/Character/Name/Family_Name]]",
+        "HasModalOverride": false
+      },
+      {
+        "FieldName": "First Look",
+        "FieldValue": "[[SunderedIsles/Oracles/Character/First_Look]]",
+        "AllowFudge": true
+      }
+    ],
+    "FollowUpOracles": [
+      {
+        "FieldName": "Moniker",
+        "FieldValue": "SunderedIsles/Oracles/Character/Name/Moniker",
+        "Emoji": "🏷️",
+        "AllowReroll": true,
+        "AllowFudge": true
+      },
+      {
+        "FieldName": "Disposition",
+        "FieldValue": "SunderedIsles/Oracles/Character/Disposition",
+        "Emoji": "👋",
+        "AllowReroll": true,
+        "AllowFudge": true
+      },
+      {
+        "FieldName": "Role",
+        "FieldValue": "SunderedIsles/Oracles/Character/Roles",
+        "Emoji": "🎭",
+        "AllowReroll": true,
+        "AllowFudge": true
+      },
+      {
+        "FieldName": "Character Details",
+        "FieldValue": "SunderedIsles/Oracles/Character/Details",
+        "Emoji": "📝",
+        "AllowReroll": true,
+        "AllowFudge": true
+      },
+      {
+        "FieldName": "Goal",
+        "FieldValue": "SunderedIsles/Oracles/Character/Goals",
+        "Emoji": "❗",
+        "AllowReroll": true,
+        "AllowFudge": true
+      }
+    ]
   }
 ]

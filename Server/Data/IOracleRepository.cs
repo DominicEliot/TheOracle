@@ -60,6 +60,16 @@ public class JsonOracleRepository : IOracleRepository
         return partial;
     }
 
+    private static void SetParentRecursive(Oracle oracle, OracleRoot root)
+    {
+        oracle.Parent = root;
+
+        foreach (var child in oracle.Oracles ?? Enumerable.Empty<Oracle>())
+        {
+            SetParentRecursive(child, root);
+        }
+    }
+
     private Oracle? findOracleRecursive(List<Oracle> oracles, string id)
     {
         if (oracles.Count == 0) return null;
@@ -84,6 +94,7 @@ public class JsonOracleRepository : IOracleRepository
             _oracles = new List<OracleRoot>();
             var files = new DirectoryInfo(Path.Combine("Data", "ironsworn")).GetFiles("*oracle*.json").ToList();
             files.AddRange(new DirectoryInfo(Path.Combine("Data", "starforged")).GetFiles("*oracle*.json").ToList());
+            files.AddRange(new DirectoryInfo(Path.Combine("Data", "sundered")).GetFiles("*oracle*.json").ToList());
 
             foreach (var file in files)
             {
@@ -99,7 +110,7 @@ public class JsonOracleRepository : IOracleRepository
             {
                 foreach (var oracle in node.Oracles)
                 {
-                    oracle.Parent = node;
+                    SetParentRecursive(oracle, node);
                 }
 
                 if (node.Categories?.Count > 0)
@@ -108,7 +119,7 @@ public class JsonOracleRepository : IOracleRepository
                     {
                         foreach (var catOracle in cat.Oracles)
                         {
-                            catOracle.Parent = node;
+                            SetParentRecursive(catOracle, node);
                         }
                     }
                 }

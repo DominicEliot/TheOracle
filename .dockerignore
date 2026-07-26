@@ -1,0 +1,28 @@
+# Build artifacts
+**/bin/
+**/obj/
+**/out/
+
+# VCS / IDE
+.git/
+.gitignore
+.idea/
+.vs/
+.vscode/
+**/*.user
+
+# Secrets and local runtime state — never bake these into the image
+**/token.json
+**/dbSettings.json
+**/logs/
+
+# Large raw Datasworn source (not loaded at runtime; the converted
+# oracles/moves/assets .json files are what the bot reads)
+Server/Data/sundered/sundered_isles.json
+
+# Docs / scaffolding not needed in the image
+DEPLOY.md
+README.md
+.env
+.env.example
+docker-compose.yml
