@@ -13,18 +13,24 @@ public enum IronGame
 
 public static class IronGameExtenstions
 {
-    // Alternate, human-typed spellings for games whose enum name isn't a single word.
-    private static readonly Dictionary<IronGame, string> AlternateNames = new()
+    private static readonly Dictionary<string, IronGame> GameNamesMap = new()
     {
-        [IronGame.SunderedIsles] = "Sundered Isles"
+        ["Sundered Isles"] = IronGame.SunderedIsles,
+        ["SunderedIsles"] = IronGame.SunderedIsles,
+        ["Ironsworn"] = IronGame.Ironsworn,
+        ["Starforged"] = IronGame.Starforged,
     };
 
     public static IronGame? GetIronGameInString(string value)
     {
-        foreach(var game in Enum.GetValues<IronGame>())
+        if (GameNamesMap.TryGetValue(value, out var game))
         {
-            if (value.Contains(game.ToString(), StringComparison.OrdinalIgnoreCase)) return game;
-            if (AlternateNames.TryGetValue(game, out var alt) && value.Contains(alt, StringComparison.OrdinalIgnoreCase)) return game;
+            return game;
+        }
+        
+        foreach(var enumValue in Enum.GetValues<IronGame>())
+        {
+            if (value.Contains(enumValue.ToString(), StringComparison.OrdinalIgnoreCase)) return game;
         }
 
         return null;
@@ -32,13 +38,9 @@ public static class IronGameExtenstions
 
     public static string RemoveIronGameInString(string value)
     {
-        foreach (var game in Enum.GetValues<IronGame>())
+        foreach (var game in GameNamesMap)
         {
-            value = Regex.Replace(value, game.ToString() + " ?", "", RegexOptions.IgnoreCase);
-            if (AlternateNames.TryGetValue(game, out var alt))
-            {
-                value = Regex.Replace(value, alt + " ?", "", RegexOptions.IgnoreCase);
-            }
+            value = Regex.Replace(value, game.Key + " ?", "", RegexOptions.IgnoreCase);
         }
 
         return value.Trim();

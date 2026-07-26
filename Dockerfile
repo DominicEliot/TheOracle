@@ -8,8 +8,7 @@ WORKDIR /src
 COPY ["Server/Server.csproj", "Server/"]
 RUN dotnet restore "Server/Server.csproj"
 
-# Build and publish the bot. Game data (oracles/moves/assets/entities) is copied to
-# the output by the csproj, so it ends up in /app/publish/Data.
+# Build and publish
 COPY . .
 RUN dotnet publish "Server/Server.csproj" -c Release -o /app/publish /p:UseAppHost=false
 

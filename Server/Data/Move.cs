@@ -38,8 +38,9 @@ public class Move
     [JsonProperty("Variant of")]
     public string VariantOf { get; set; }
 
-    // Base-game move ids this move supersedes (used by Sundered Isles to override
-    // the Starforged moves it reskins). Null for base-game moves.
+    /// <summary>
+    /// Base-game move ids this move supersedes (used by Sundered Isles to override the Starforged moves it reskins). Null for base-game moves. 
+    /// </summary>
     [JsonProperty("Replaces")]
     public List<string>? Replaces { get; set; }
 

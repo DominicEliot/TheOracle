@@ -18,20 +18,19 @@ for local runs, from `dbSettings.json` / `token.json`.
 
 ## Option A — Self-host with Docker Compose (local machine or a VPS)
 
-Runs the bot **and** a Postgres database together. Good for a home server,
-Hetzner/DigitalOcean/Linode VPS, or Oracle Cloud's Always-Free VM.
+Runs the bot **and** a Postgres database together.
 
 ```bash
 cp .env.example .env
 # edit .env: set DISCORD_TOKEN and DB_PASSWORD
 docker compose up -d --build
-docker compose logs -f bot     # watch it connect
+docker compose logs -f bot     # to confirm it connected
 ```
 
 Update after pulling new code: `docker compose up -d --build`.
 Stop: `docker compose down` (data is kept in the `pgdata` volume).
 
-## Option B — Managed platform (Railway / Render / Fly.io)
+## Option B — Managed platform
 
 Host the bot process on a platform and use its managed Postgres. The image
 builds straight from the `Dockerfile`; no web port is needed (it's a worker).
@@ -47,21 +46,6 @@ builds straight from the `Dockerfile`; no web port is needed (it's a worker).
      (Railway/Render often expose it automatically; otherwise paste it in).
 4. Deploy and check the logs for the startup banner and "Ready".
 
-## Option C — Plain host / no Docker
-
-On any machine with the **.NET 10 runtime**:
-
-```bash
-dotnet publish Server/Server.csproj -c Release -o out
-# provide dbSettings.json + token.json in ./out, or set env vars, then:
-cd out && dotnet Server.dll
-```
-
-Use a process manager (systemd, `pm2`, NSSM on Windows) to keep it running and
-restart on crash.
-
----
-
 ## Discord setup
 
 1. Create an application at <https://discord.com/developers/applications>, add a
@@ -72,9 +56,5 @@ restart on crash.
 
 ## First-run notes
 
-- **Slash commands register globally** and can take up to ~1 hour to appear the
-  first time. For instant iteration on your own server, switch
-  `RegisterCommandsGloballyAsync` in `Server/DiscordServer/CommandHandler.cs` to
-  `RegisterCommandsToGuildAsync(<your guild id>, true)`.
-- The schema is created automatically (`EnsureCreated`) — no manual migrations.
+- **Slash commands register globally** and can take up to ~1 hour to appear the first time.
 - Logs go to stdout and to `logs/log.txt` inside the working directory.
