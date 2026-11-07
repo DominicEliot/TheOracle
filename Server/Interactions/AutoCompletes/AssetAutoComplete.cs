@@ -26,7 +26,7 @@ public class AssetAutoComplete : AutocompleteHandler
                         .Where(m => m.Name.Contains(userText, StringComparison.OrdinalIgnoreCase) || m.Parent?.Name.Contains(userText, StringComparison.OrdinalIgnoreCase) == true)
                         .OrderBy(m => m.Name)
                         .Take(SelectMenuBuilder.MaxOptionCount)
-                        .Select(m => new AutocompleteResult($"{m.Name} [{m.Parent?.Name}]", m.Id.ToString())).AsEnumerable();
+                        .Select(m => new AutocompleteResult($"{m.Name} [{m.Parent?.Name}]", m.Id.ToString()));
             }
 
             return (AutocompletionResult.FromSuccess(successList));

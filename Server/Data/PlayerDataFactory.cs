@@ -26,8 +26,12 @@ public class PlayerDataFactory
 
     private async Task<IronGame> ResolveGame(ulong PlayerId, IronGame? gameOverride)
     {
+        if (gameOverride is not null)
+        {
+            return gameOverride.Value;
+        }
         using var db = dbFactory.CreateDbContext();
-        return gameOverride ?? (await db.Players.FindAsync(PlayerId))?.Game ?? default;
+        return (await db.Players.FindAsync(PlayerId))?.Game ?? IronGame.Ironsworn;
     }
 
     public async Task<IEnumerable<Asset>> GetPlayerAssets(ulong PlayerId, IronGame? gameOverride = null)
